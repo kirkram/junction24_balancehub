@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import HomeHeadder from '../components/Home/HomeHeadder'
 import Coupons from '../components/Home/Coupons'
@@ -6,7 +6,8 @@ import Events from '../components/Home/Events'
 
 const Home = () => {
   return (
-    <View>
+    <View style={styles.container}>
+      <Text style={styles.headerText}>Home</Text>
       <HomeHeadder colorr="blue" />
       <Coupons />
       <Events />
@@ -14,5 +15,15 @@ const Home = () => {
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  container: {
+  },
+  headerText: {
+    fontSize: 20,
+    fontWeight: "bold",
+    padding: 20,
+  },
+})
 
 export default Home
