@@ -34,13 +34,14 @@ const Events = () => {
 
 const styles = StyleSheet.create({
   eventContainer: {
-    marginRight: 20,
-    width: 300,
+    marginRight: 10,
+    width: 175, // Smaller width
     position: 'relative',
   },
   image: {
     width: '100%',
-    height: 200,
+    height: 100, // Smaller height
+    borderRadius: 10, // Rounded corners
   },
   textContainer: {
     position: 'absolute',
@@ -49,24 +50,24 @@ const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     justifyContent: 'flex-end',
-    padding: 16,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderRadius: 10,
+    padding: 10,
+    backgroundColor: 'rgba(0, 0, 255, 0.35)', // Blue background dimming
+    borderRadius: 10, // Rounded corners
   },
   date: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: 'bold',
-    marginBottom: 8,
+    marginBottom: 4,
   },
   title: {
     color: 'white',
-    fontSize: 16,
-    marginBottom: 4,
+    fontSize: 14,
+    marginBottom: 2,
   },
   time: {
     color: 'rgba(255, 255, 255, 0.8)',
-    fontSize: 14,
+    fontSize: 12,
   },
 });
 
