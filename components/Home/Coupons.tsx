@@ -1,9 +1,9 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
-import coupons from '../../Aava_Coupons.ts';
+import coupons from '../../companies_filler/Companies_Coupons.ts';
 import { HomeStackParamList } from '../../@types/navigation.ts';
-import Colors from '../../constants/Colors'; // Import the Colors object
+import Colors from '../../constants/Colors';
 
 const Coupons = () => {
   const navigation = useNavigation<NavigationProp<HomeStackParamList>>();

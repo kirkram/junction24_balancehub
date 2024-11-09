@@ -3,7 +3,7 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
-import coupons from '../../Aava_Coupons.ts'
+import coupons from '../../companies_filler/Companies_Coupons.ts'
 import { HomeStackParamList } from '../../@types/navigation.ts';
 
 const CouponsList = () => {

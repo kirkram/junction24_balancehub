@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
-import booking from '../../Aava_Booking.ts';
+import booking from '../../companies_filler/Companies_Booking.ts';
 import Colors from '../../constants/Colors.ts';
 import { NavigationProp, useNavigation } from '@react-navigation/native'
 import { HomeStackParamList } from '../../@types/navigation.ts';
