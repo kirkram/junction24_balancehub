@@ -25,7 +25,7 @@ export default [
   },
   {
     id: "booking4",
-    title: "Mental Health Hotline",
+    title: "Crisis Lifeline",
     description:
       "Connect with out hotline that is open 24/7 to help when you need someone to talk to",
     image:
