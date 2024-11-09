@@ -24,12 +24,15 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
 
 const styles = StyleSheet.create({
   header: {
+    flex: 1,
+    width: '100%',
     height: 150,
     borderRadius: 10,
     justifyContent: 'center',
-    alignItems: 'flex-start',
-    padding: 10,
+    alignItems: 'center',
+    padding: 0,
     overflow: 'hidden',
+    marginTop: -20,
   },
   gradient: {
     ...StyleSheet.absoluteFillObject,
@@ -42,10 +45,11 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 10,
     left: 10,
+    marginTop: 75
   },
   username: {
-    fontSize: 24,
-    color: 'white',
+    fontSize: 32,
+    color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
     bottom: 10,

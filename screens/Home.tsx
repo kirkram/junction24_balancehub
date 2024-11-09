@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: 3,
+    marginVertical: 0,
     paddingBottom: 5,
     paddingTop: 15,
   },
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   sectionContainer: {
-    marginBottom: 20, // Add margin to the bottom of each section
+    marginBottom: 7, 
   },
 });
 
