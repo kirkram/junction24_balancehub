@@ -1,8 +1,9 @@
 const Colors = {
   ss: {
-    primary: "rgba(255, 0, 0, 1)", // Red with full opacity
+    primary: "rgba(0, 0, 175, 1)", // Blue with full opacity
     secondary: "rgba(0, 255, 0, 1)", // Green with full opacity
     font: "rgba(255, 255, 255, 1)",
+    fontBlack: "rgba(0, 0, 0, 1)",
     lightBg: "rgba(255, 255, 255, 1)", // White with full opacity
     middleBg: "rgba(204, 204, 204, 1)",
     darkBg: "rgba(204, 204, 204, 1)",
