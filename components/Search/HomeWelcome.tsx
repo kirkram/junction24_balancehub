@@ -8,6 +8,7 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
   const username2 = "Google review 4.8/5";
   const username4 = "Our App well-being rating 4.6/5";
   const username3 = "Summary 4.7/5";
+  const username5 = "Most relevant  tags";
   const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/fajgFYnlYHU8HDcmxnsfyhZcYopLgZV4/-GMYIG7gJXH7oghWCwTODUO4AjUyqltv/g8UbHMYZWMCr344wCq19kcYmlBHUX8JP/j1g-fyZheZs.png"; // background image link
   const imageUrl1 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/DB2YG6lT7aRiVpLDKu-bXuNiMMGaqGfw/D_5Zob4SSiu0G0W5V9c6ObIFYbaA7g7v/xrXyvyWQFagY7CJuRcdRu6xI6bJVVl2s/DU4lbE1-iMo.png";
   const imageUrl2 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/z4ra9avuCbZyB5qPvxuG_w7x-0Aus2Xp/2rq8eDBNB7094TWrUWm5E5abH1IIiEDy/yL0hLaSO9jXGU7imRHWfZOjLrUmyHd40/qNwIYUSQRsM.png";
@@ -27,6 +28,7 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
         <Text style={styles.username2}>{username2}</Text>
         <Text style={styles.username3}>{username3}</Text>
         <Text style={styles.username4}>{username4}</Text>
+        <Text style={styles.username5}>{username5}</Text>
         <Image source={{ uri: imageUrl1 }} style={styles.image1} />
         <Image source={{ uri: imageUrl2 }} style={styles.image2} />
         <Image source={{ uri: imageUrl3 }} style={styles.image3} />
@@ -54,10 +56,9 @@ const styles = StyleSheet.create({
   welcomeText: {
     fontSize: 18,
     color: Colors.ss.font,
-    fontWeight: 'normal',
     position: 'absolute',
     fontWeight: 'bold',
-    top: 10,
+    top: -20,
     left: 10,
     marginTop: 50
   },
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 100, // Adjusted position
+    top: 70, // Adjusted position
     left: 10,
   },
   username1: {
@@ -74,7 +75,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 140, // Adjusted position
+    top: 110, // Adjusted position
     left: 10,
   },
   username2: {
@@ -82,7 +83,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 180, // Adjusted position
+    top: 150, // Adjusted position
     left: 10,
   },
   username3: {
@@ -90,19 +91,27 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 220, // Adjusted position
+    top: 190, // Adjusted position
     left: 10,
   },
   username4: {
-    fontSize: 17,
+    fontSize: 15,
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
     top: 120, // Adjusted position
-    left: 150,
+    left: 170,
     width: 200,
     flexWrap: 'wrap',
-    backgroundColor: 'green',
+    backgroundColor: 'rgba(0, 100, 0, 0.5)',
+  },
+  username5: {
+    fontSize: 8,
+    color: Colors.ss.font,
+    position: 'absolute',
+    top: 210, // Adjusted position
+    left: 130,
+    opacity: 0.6,
   },
   
   image1: {
@@ -110,7 +119,7 @@ const styles = StyleSheet.create({
     height: 22,
     borderRadius: 20,
     position: 'absolute',
-    top: 30,
+    top: 230,
     right: 255,
   },
   image2: {
@@ -118,7 +127,7 @@ const styles = StyleSheet.create({
     height: 25,
     borderRadius: 25,
     position: 'absolute',
-    top: 30,
+    top: 230,
     right: 155,
   },
   image3: {
@@ -126,7 +135,7 @@ const styles = StyleSheet.create({
     height: 25,
     borderRadius: 25,
     position: 'absolute',
-    top: 30,
+    top: 230,
     right: 40,
   },
 });
