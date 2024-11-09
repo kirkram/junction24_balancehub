@@ -31,4 +31,16 @@ export default [
     image:
       "https://images.pexels.com/photos/7709191/pexels-photo-7709191.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
+  {
+    id: "booking5",
+    title: "Depression Counseling",
+    description: "Our licensed counselors are here to help you navigate through the challenges of depression. We offer personalized counseling sessions to help you understand and manage your depression, providing you with the tools and support needed to improve your mental health.",
+    image: "https://images.pexels.com/photos/5699466/pexels-photo-5699466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    id: "booking6",
+    title: "Life Coaching",
+    description: "Our life coaching services are designed to help you set and achieve your personal and professional goals. Whether you are looking to improve your career, relationships, or overall well-being, our life coaches are here to provide you with the guidance and support you need to succeed.",
+    image: "https://images.pexels.com/photos/103127/pexels-photo-103127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  }
 ];
