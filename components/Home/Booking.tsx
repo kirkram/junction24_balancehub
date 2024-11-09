@@ -30,23 +30,23 @@ const styles = StyleSheet.create({
     marginLeft: 5,
     marginTop: 5,
     marginBottom: 5,
-    width: 175, // Smaller width
+    width: 225,
     position: 'relative',
   },
   image: {
     width: '100%',
-    height: 100, // Adjusted height
+    height: 100,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
   textContainer: {
-    backgroundColor: 'gray', // Gray background
+    backgroundColor: 'gray',
     padding: 10,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
   },
   title: {
-    color: 'black', // Blue font color
+    color: 'black',
     fontSize: 16,
     fontWeight: 'bold',
   },

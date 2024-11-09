@@ -22,7 +22,7 @@ const Events = () => {
           <View style={styles.eventContainer}>
             <Image source={{ uri: event.image }} style={styles.image} />
             <LinearGradient
-              colors={['rgba(0, 0, 255, 0.6)', 'rgba(0, 0, 255, 0.2)', 'transparent']}
+              colors={['rgba(0, 0, 175, 0.6)', 'rgba(0, 0, 100, 0.5)', 'transparent']}
               start={[0, 1]}
               end={[1, 0]}
               style={styles.gradient}
@@ -43,7 +43,7 @@ const Events = () => {
 const styles = StyleSheet.create({
   eventContainer: {
     marginRight: 5,
-    width: 250,
+    width: 175,
     position: 'relative',
   },
   image: {
@@ -61,9 +61,9 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    borderBottomLeftRadius: 10,
-    borderBottomRightRadius: 10,
+    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    // borderBottomLeftRadius: 10,
+    // borderBottomRightRadius: 10,
   },
   date: {
     color: 'white',
