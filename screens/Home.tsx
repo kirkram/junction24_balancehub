@@ -3,6 +3,7 @@ import React from 'react'
 import HomeHeadder from '../components/Home/HomeHeadder'
 import Coupons from '../components/Home/Coupons'
 import Events from '../components/Home/Events'
+import Booking from '../components/Home/Booking'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeHeadder colorr="blue" />
       <Coupons />
       <Events />
+      <Booking />
       <Text>Home</Text>
     </View>
   )
