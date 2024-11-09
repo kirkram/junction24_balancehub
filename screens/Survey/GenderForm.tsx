@@ -1,17 +1,26 @@
-import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import { SurveyStackParamList } from '../../@types/navigation';
 
 interface GenderFormProps { }
 
 const GenderForm: React.FC<GenderFormProps> = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<SurveyStackParamList>>();
   const [selectedGender, setSelectedGender] = useState<string | null>(null);
   const [showGender, setShowGender] = useState(false);
 
   const handleGenderSelect = (gender: string) => {
     setSelectedGender(gender);
+  };
+
+  const handlePress = (section: string) => {
+    if (section === 'Continue') {
+      navigation.navigate('SurveyInterests');
+    } else {
+      console.log(`${section} clicked`);
+    }
   };
 
   return (
@@ -45,19 +54,19 @@ const GenderForm: React.FC<GenderFormProps> = () => {
           </TouchableOpacity>
         ))}
       </View>
-      <View style={styles.bottomContainer}>
-        <View style={styles.showGenderContainer}>
-          <TouchableOpacity
-            style={styles.checkbox}
-            onPress={() => setShowGender(!showGender)}
-            accessibilityRole="checkbox"
-            accessibilityState={{ checked: showGender }}
-          >
-            {showGender && <View style={styles.checkboxInner} />}
-          </TouchableOpacity>
-          <Text style={styles.showGenderText}>Show my gender on my profile</Text>
-        </View>
-        <TouchableOpacity style={styles.continueButton} accessibilityRole="button">
+        <View style={styles.bottomContainer}>
+          <View style={styles.showGenderContainer}>
+            <TouchableOpacity
+              style={styles.checkbox}
+              onPress={() => setShowGender(!showGender)}
+              accessibilityRole="checkbox"
+              accessibilityState={{ checked: showGender }}
+            >
+              {showGender && <View style={styles.checkboxInner} />}
+            </TouchableOpacity>
+             <Text style={styles.showGenderText}>Show my gender on my profile</Text>
+      </View>
+        <TouchableOpacity style={styles.continueButton} onPress={() => handlePress('Continue')} accessibilityRole="button">
           <Text style={styles.continueButtonText}>CONTINUE</Text>
         </TouchableOpacity>
       </View>
@@ -73,6 +82,7 @@ const styles = StyleSheet.create({
   },
   topContainer: {
     alignItems: 'center',
+    marginBottom: -120,
   },
   progressBar: {
     backgroundColor: '#5E8D83',

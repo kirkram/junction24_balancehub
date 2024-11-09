@@ -36,4 +36,5 @@ export type SearchStackParamList = {
 
 export type SurveyStackParamList = {
   Survey: undefined;
+  SurveyInterests: undefined;
 };

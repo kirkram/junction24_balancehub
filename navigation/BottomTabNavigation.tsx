@@ -2,7 +2,7 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home/Home';
-import Ai from '../screens/Survey/Survey';
+import Ai from '../screens/Survey/GenderForm';
 import Header from '../components/Home/Header'; // Import the Header component
 import Colors from '../constants/Colors'; // Import the Colors object
 import { Platform } from 'react-native';
