@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
+import Colors from '../constants/Colors';
 import HomeWelcome from '../components/Home/HomeWelcome';
 import Coupons from '../components/Home/Coupons';
 import Events from '../components/Home/Events';
@@ -103,8 +104,9 @@ const styles = StyleSheet.create({
   },
   infoContainer: {
     marginTop: 20,
-    marginBottom: 10,
-    color: 'gray',
+    marginBottom: 5,
+    paddingBottom: 15,
+    color: Colors.ss.bottomText,
     fontSize: 20,
   },
 });

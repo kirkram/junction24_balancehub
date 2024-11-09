@@ -8,6 +8,7 @@ const Colors = {
     middleBg: "rgba(204, 204, 204, 1)",
     darkBg: "rgba(204, 204, 204, 1)",
     overlay: "rgba(145, 171, 147, 0.3)",
+    bottomText: "rgba(90, 90, 90, 1)",
     gradient1: 'rgba(0, 0, 175, 0.6)', 
     gradient2: 'rgba(0, 0, 100, 0.5)'
   },

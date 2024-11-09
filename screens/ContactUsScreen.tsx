@@ -4,19 +4,38 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { HomeStackParamList } from '../@types/navigation.ts';
 
-const SustainabilityScreen = () => {
+const ContactUsScreen = () => {
   const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
 
   return (
     <View style={styles.container}>
       <TouchableOpacity onPress={() => navigation.navigate('MainHome' as never)} style={styles.backButton}>
-        <Icon name="chevron-back" size={20} color="black" />
+      <View style={styles.row}>
+          <Icon name="chevron-back" size={20} color="black" style={styles.icon} />
+          <Text style={styles.title}>Contact Us</Text>
+      </View>
       </TouchableOpacity>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.textContainer}>
-          <Text style={styles.title}>Our Commitment to Sustainability</Text>
+          
           <Text style={styles.description}>
-           WOW
+            Thank you for reaching out to us. We are based in Helsinki and are here to assist you with any inquiries you may have. 
+            Please find our contact details below:
+          </Text>
+          <Text style={styles.contactInfo}>
+            Address: 123 Helsinki Lane, 00100 Helsinki, Finland
+          </Text>
+          <Text style={styles.contactInfo}>
+            Phone: +358 40 123 4567
+          </Text>
+          <Text style={styles.contactInfo}>
+            Email: info@helsinkicompany.fi
+          </Text>
+          <Text style={styles.contactInfo}>
+            Customer Support: support@helsinkicompany.fi
+          </Text>
+          <Text style={styles.contactInfo}>
+            Sales: sales@helsinkicompany.fi
           </Text>
         </View>
       </ScrollView>
@@ -37,15 +56,32 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
     borderRadius: 10,
   },
+  row: {
+    flexDirection: 'row',
+    // alignItems: 'center',
+    // alignSelf: 'center'
+  },
+  icon: {
+    flex: 1, // Adjust this value to align the icon with the text
+  },
   title: {
-    fontSize: 24,
+    // flexDirection: 'row',
+    // alignSelf: 'center',
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginRight: 135,
+    marginTop: -3,
   },
   description: {
     fontSize: 16,
     lineHeight: 24,
+    marginBottom: 10,
+  },
+  contactInfo: {
+    fontSize: 16,
+    lineHeight: 24,
+    marginBottom: 5,
   },
 });
 
-export default SustainabilityScreen;
+export default ContactUsScreen;

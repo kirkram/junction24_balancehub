@@ -9,9 +9,17 @@ const SustainabilityScreen = () => {
 
   return (
     <View style={styles.container}>
+
       <TouchableOpacity onPress={() => navigation.navigate('MainHome' as never)} style={styles.backButton}>
-        <Icon name="chevron-back" size={20} color="black" />
+        <View style={styles.row}>
+            <Icon name="chevron-back" size={20} color="black" style={styles.icon} />
+            <Text style={styles.title}>Sustainability</Text>
+        </View>
       </TouchableOpacity>
+
+      {/* <TouchableOpacity onPress={() => navigation.navigate('MainHome' as never)} style={styles.backButton}>
+        <Icon name="chevron-back" size={20} color="black" />
+      </TouchableOpacity> */}
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.textContainer}>
           <Text style={styles.title}>Our Commitment to Sustainability</Text>
@@ -40,10 +48,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
     borderRadius: 10,
   },
+  row: {
+    flexDirection: 'row',
+  },
+  icon: {
+    flex: 1,
+  },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     fontWeight: 'bold',
-    marginBottom: 10,
+    marginRight: 125,
+    marginTop: -3,
   },
   description: {
     fontSize: 16,
