@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import coupons from '../../Aava_Coupons.ts';
+import Colors from '../../constants/Colors'; // Import the Colors object
 
 const Coupons = () => {
   const handleCouponPress = (coupon) => {
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
   },
   overlay: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(200, 200, 150, 0.25)',
+    backgroundColor: Colors.ss.overlay, // Use the overlay color from Colors
     borderRadius: 10,
   },
   textContainer: {

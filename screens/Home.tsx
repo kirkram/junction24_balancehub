@@ -22,6 +22,7 @@ const Home = () => {
   return (
     <ScrollView style={styles.container}>
       <HomeHeadder colorr="blue" />
+      
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Coupons')}>
         <Text style={styles.sectionTitle}>Coupons</Text>
         <Icon name="chevron-forward" size={20} color="black" />

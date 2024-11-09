@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import Colors from '../../constants/Colors.ts';
 
 const HomeHeadder = ({ colorr }: { colorr: string }) => {
   const username = "Heidi Kekkonnen"; 
@@ -9,7 +10,7 @@ const HomeHeadder = ({ colorr }: { colorr: string }) => {
   return (
     <ImageBackground source={{ uri: backgroundImageUrl }} style={[styles.header, { backgroundColor: colorr }]}>
       <LinearGradient
-        colors={['rgba(0, 0, 255, 0.6)', 'rgba(0, 0, 255, 0.2)', 'transparent']}
+        colors={[Colors.ss.gradient1, Colors.ss.gradient2, 'transparent']}
         start={[0, 1]}
         end={[1, 0]}
         style={styles.gradient}>
@@ -36,7 +37,7 @@ const styles = StyleSheet.create({
   },
   welcomeText: {
     fontSize: 14,
-    color: 'white',
+    color: Colors.ss.font,
     fontWeight: 'normal',
     position: 'absolute',
     top: 10,

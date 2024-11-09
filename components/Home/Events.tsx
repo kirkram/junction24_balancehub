@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import events from '../../Aava_Events.ts';
+import Colors from '../../constants/Colors.ts';
 
 const Events = () => {
   const handleEventPress = (event) => {
@@ -22,7 +23,7 @@ const Events = () => {
           <View style={styles.eventContainer}>
             <Image source={{ uri: event.image }} style={styles.image} />
             <LinearGradient
-              colors={['rgba(0, 0, 175, 0.6)', 'rgba(0, 0, 100, 0.5)', 'transparent']}
+              colors={[Colors.ss.gradient1, Colors.ss.gradient2, 'transparent']}
               start={[0, 1]}
               end={[1, 0]}
               style={styles.gradient}
@@ -66,13 +67,13 @@ const styles = StyleSheet.create({
     // borderBottomRightRadius: 10,
   },
   date: {
-    color: 'white',
+    color: Colors.ss.font,
     fontSize: 16,
     fontWeight: 'bold',
     marginBottom: 4,
   },
   title: {
-    color: 'white',
+    color: Colors.ss.font,
     fontSize: 14,
     marginBottom: 2,
   },

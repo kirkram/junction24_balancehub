@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import booking from '../../Aava_Booking.ts';
+import Colors from '../../constants/Colors.ts';
 
 const Booking = () => {
   const handleBookingPress = (booking) => {
@@ -40,13 +41,13 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 10,
   },
   textContainer: {
-    backgroundColor: 'gray',
+    backgroundColor: Colors.ss.darkBg,
     padding: 10,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,
   },
   title: {
-    color: 'black',
+    color: Colors.ss.font,
     fontSize: 16,
     fontWeight: 'bold',
   },
