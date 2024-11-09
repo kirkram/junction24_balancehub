@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 10,
   },
   textContainer: {
-    backgroundColor: Colors.ss.darkBg,
+    backgroundColor: Colors.ss.bookingBottom,
     padding: 10,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,

@@ -16,11 +16,11 @@ const Header = ({ screenName }: { screenName: string }) => {
   return (
     <View style={styles.headerContainer}>
       <TouchableOpacity style={styles.searchIconContainer} onPress={handleSearchIconPress}>
-        <SearchIcon color={Colors.ss.font} />
+        <SearchIcon color={Colors.ss.font} size={30} />
       </TouchableOpacity>
       <Text style={styles.headerText}>{screenName}</Text>
       <TouchableOpacity style={styles.userIconContainer} onPress={handleUserIconPress}>
-        <UserIcon color={Colors.ss.font} />
+        <UserIcon color={Colors.ss.font} size={30} />
       </TouchableOpacity>
     </View>
   );
@@ -28,27 +28,26 @@ const Header = ({ screenName }: { screenName: string }) => {
 
 const styles = StyleSheet.create({
   headerContainer: {
-    height: 120,
+    height: 107,
     backgroundColor: Colors.ss.primary, 
     justifyContent: 'center',
     alignItems: 'center',
-    paddingTop: 65,
+    paddingTop: 50,
     position: 'relative',
   },
   headerText: {
     fontSize: 35,
     color: Colors.ss.font,
-    fontWeight: 'bold',
   },
   userIconContainer: {
     position: 'absolute',
     right: 20,
-    top: 82,
+    top: 68,
   },
   searchIconContainer: {
     position: 'absolute',
     left: 20,
-    top: 82,
+    top: 66,
   },
 });
 
