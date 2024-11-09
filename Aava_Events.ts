@@ -6,7 +6,7 @@ export default [
     time: "18:00 - 19:00",
     location: "@m/s Emma | Kauppatorin satama",
     description: "Join us for an evening of relaxing group yoga on the private cruise M/S Emma. Rejuvenate while enjoying scenic views.",
-    image: "https://kanavansuuntelakka.fi/wp-content/uploads/2014/01/emma-23.jpeg",
+    image: "https://images.pexels.com/photos/14989453/pexels-photo-14989453/free-photo-of-photo-of-a-people-exercising-at-a-gym.jpeg?auto=compress&cs=tinysrgb&w=672",
   },
   {
     id: "event2",
@@ -15,7 +15,7 @@ export default [
     time: "12:00 - 15:00",
     location: "Kafe Coma, Tokoinranta | Elaintarhantie 12, 00530, Helsinki",
     description: "Enjoy a laid-back afternoon picnic by the waterfront with friends, games, and delicious food.",
-    image: "https://cdn.siasat.com/wp-content/uploads/2023/03/Sunset-Cinema-Club-780x470.jpg",
+    image: "https://images.pexels.com/photos/745045/pexels-photo-745045.jpeg?auto=compress&cs=tinysrgb&w=672&h=750&dpr=2",
   },
   {
     id: "event3",
@@ -24,16 +24,7 @@ export default [
     time: "10:00 - 11:30",
     location: "Hotel Common Room, Helsinki",
     description: "Learn techniques and tips to improve your sleep quality with certified trainers in this immersive sleep training workshop.",
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*eLP-8mjWU1ypPh2Q",
-  },
-  {
-    id: "event4",
-    title: "Wellness Training",
-    date: "2025-04-25",
-    time: "09:00 - 12:00",
-    location: "Wellness Center, Helsinki",
-    description: "A comprehensive wellness training session covering physical and mental health practices for a balanced lifestyle.",
-    image: "https://kanavansuuntelakka.fi/wp-content/uploads/2014/01/emma-23.jpeg",
+    image: "https://images.pexels.com/photos/25956170/pexels-photo-25956170/free-photo-of-a-tiger-sleeping-in-a-zoo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "event5",
@@ -42,7 +33,7 @@ export default [
     time: "14:00 - 17:00",
     location: "Megazone Helsinki, Salomonkatu 15, Helsinki",
     description: "Challenge your friends in a friendly mini golf tournament and enjoy an afternoon of fun!",
-    image: "https://cdn.siasat.com/wp-content/uploads/2023/03/Sunset-Cinema-Club-780x470.jpg",
+    image: "https://images.pexels.com/photos/54123/pexels-photo-54123.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     id: "event6",
@@ -51,7 +42,7 @@ export default [
     time: "15:00 - 17:00",
     location: "Hietaniemi Beach, Helsinki",
     description: "Bring your team spirit for a beach volleyball match at Hietaniemi Beach!",
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*eLP-8mjWU1ypPh2Q",
+    image: "https://images.pexels.com/photos/6180408/pexels-photo-6180408.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "event7",
@@ -60,7 +51,7 @@ export default [
     time: "18:00 - 20:00",
     location: "Oulunkylä Sports Park, Helsinki",
     description: "Join us for an exciting football game at Oulunkylä Sports Park.",
-    image: "https://kanavansuuntelakka.fi/wp-content/uploads/2014/01/emma-23.jpeg",
+    image: "https://images.pexels.com/photos/18026365/pexels-photo-18026365/free-photo-of-men-playing-soccer-match.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "event8",
@@ -69,7 +60,7 @@ export default [
     time: "11:00 - 12:00",
     location: "Yoga Studio Helsinki, Mikonkatu 15, Helsinki",
     description: "Start your day with an energizing pilates class at Yoga Studio Helsinki.",
-    image: "https://cdn.siasat.com/wp-content/uploads/2023/03/Sunset-Cinema-Club-780x470.jpg",
+    image: "https://images.pexels.com/photos/868483/pexels-photo-868483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "event9",
@@ -78,7 +69,7 @@ export default [
     time: "17:00 - 18:00",
     location: "Nature Reserve, Espoo",
     description: "Relax and unwind with a guided meditation session surrounded by nature.",
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*eLP-8mjWU1ypPh2Q",
+    image: "https://images.pexels.com/photos/6648552/pexels-photo-6648552.jpeg?auto=compress&cs=tinysrgb&w=1200",
   },
   {
     id: "event10",
@@ -87,7 +78,7 @@ export default [
     time: "13:00 - 16:00",
     location: "Art Studio, Helsinki",
     description: "Explore your creativity with hands-on pottery-making in this workshop for all skill levels.",
-    image: "https://kanavansuuntelakka.fi/wp-content/uploads/2014/01/emma-23.jpeg",
+    image: "https://images.pexels.com/photos/3094225/pexels-photo-3094225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "event11",
@@ -96,7 +87,7 @@ export default [
     time: "16:00 - 18:00",
     location: "Conference Center, Helsinki",
     description: "Listen to inspiring talks from guest speakers on various topics related to wellness and productivity.",
-    image: "https://cdn.siasat.com/wp-content/uploads/2023/03/Sunset-Cinema-Club-780x470.jpg",
+    image: "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: "event12",
@@ -105,6 +96,6 @@ export default [
     time: "20:00 - 23:00",
     location: "Karaoke Bar, Helsinki",
     description: "Show off your singing skills and enjoy a night of fun with friends at Karaoke Bar.",
-    image: "https://miro.medium.com/v2/resize:fit:720/format:webp/0*eLP-8mjWU1ypPh2Q",
+    image: "https://images.pexels.com/photos/18433815/pexels-photo-18433815/free-photo-of-woman-singing-with-microphone-on-party.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   }
 ];
