@@ -1,14 +1,17 @@
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native'
-import { useNavigation } from '@react-navigation/native'
+import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
+import { LinearGradient } from 'expo-linear-gradient';
 import coupons from '../Aava_Coupons.ts'
+import { HomeStackParamList } from '../@types/navigation.ts';
 
 const CouponsList = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
 
   const handleCouponPress = (coupon) => {
     console.log('Coupon clicked:', coupon);
+    navigation.navigate('CouponScreen', { couponId : coupon.id });
   };
 
   return (
@@ -21,10 +24,17 @@ const CouponsList = () => {
           <TouchableOpacity key={coupon.id} onPress={() => handleCouponPress(coupon)}>
             <View style={styles.couponContainer}>
               <Image source={{ uri: coupon.file }} style={styles.image} />
-              <View style={styles.textContainer}>
-                <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail"> {coupon.name} </Text>
-                <Text style={styles.issueText}> {coupon.applicationName} </Text>
-              </View>
+                <LinearGradient
+                colors={['rgba(145, 171, 147, 0.6)', 'rgba(132, 160, 147, 0.3)', 'transparent']}
+                start={[0, 1]}
+                end={[1, 0]}
+                style={styles.gradient}
+                >
+                <View style={styles.textContainer}>
+                  <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail"> {coupon.name} </Text>
+                  <Text style={styles.issueText}> {coupon.applicationName} </Text>
+                </View>
+                </LinearGradient>
             </View>
           </TouchableOpacity>
         ))}
@@ -56,6 +66,10 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 10,
   },
+  gradient: {
+    ...StyleSheet.absoluteFillObject,
+    borderRadius: 10,
+  },
   textContainer: {
     position: 'absolute',
     top: 0,
@@ -64,7 +78,6 @@ const styles = StyleSheet.create({
     bottom: 0,
     justifyContent: 'space-between',
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 255, 0.35)',
     borderRadius: 10,
   },
   title: {

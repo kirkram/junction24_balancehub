@@ -4,6 +4,7 @@ import React from 'react'
 import { HomeStackParamList } from '../../@types/navigation';
 import Home from '../../screens/Home';
 import CouponsList from '../../screens/CouponsList';
+import CouponScreen from '../../screens/CouponScreen';
 
 const HomeStackScreen = () => {
     const HomeStack = createNativeStackNavigator<HomeStackParamList>();
@@ -11,6 +12,7 @@ const HomeStackScreen = () => {
     <HomeStack.Navigator>
         <HomeStack.Screen name="MainHome" component={Home} options={{ headerShown: false }}/>
         <HomeStack.Screen name="CouponsList" component={CouponsList} options={{ headerShown: false }}/>
+        <HomeStack.Screen name="CouponScreen" component={CouponScreen} options={{ headerShown: false }} />
     </HomeStack.Navigator>
   )
 }

@@ -1,11 +1,16 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation, NavigationProp } from '@react-navigation/native';
 import coupons from '../../Aava_Coupons.ts';
+import { HomeStackParamList } from '../../@types/navigation.ts';
 import Colors from '../../constants/Colors'; // Import the Colors object
 
 const Coupons = () => {
+  const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
+  
   const handleCouponPress = (coupon) => {
     console.log('Coupon clicked:', coupon);
+    navigation.navigate('CouponScreen', { couponId : coupon.id });
   };
 
   return (
@@ -14,14 +19,14 @@ const Coupons = () => {
         <TouchableOpacity key={coupon.id} onPress={() => handleCouponPress(coupon)}>
           <View style={styles.couponContainer}>
             <Image source={{ uri: coupon.file }} style={styles.image} />
-            <View style={styles.overlay} />
-            <View style={styles.textContainer}>
-              <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail">{coupon.name}</Text>
-              <View style={styles.applicationContainer}>
-                <Image source={{ uri: coupon.applicationFile }} style={styles.applicationImage} />
-                <Text style={styles.applicationName}>{coupon.applicationName}</Text>
+              <View style={styles.overlay} />
+              <View style={styles.textContainer}>
+                <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail">{coupon.name}</Text>
+                <View style={styles.applicationContainer}>
+                  <Image source={{ uri: coupon.applicationFile }} style={styles.applicationImage} />
+                  <Text style={styles.applicationName}>{coupon.applicationName}</Text>
+                </View>
               </View>
-            </View>
           </View>
         </TouchableOpacity>
       ))}
@@ -41,6 +46,10 @@ const styles = StyleSheet.create({
   image: {
     width: '100%',
     height: 100,
+    borderRadius: 10,
+  },
+  gradient: {
+    ...StyleSheet.absoluteFillObject,
     borderRadius: 10,
   },
   overlay: {
