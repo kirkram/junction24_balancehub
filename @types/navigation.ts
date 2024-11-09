@@ -12,5 +12,9 @@ export type BottomTabParamList = {
 export type HomeStackParamList = {
   MainHome: undefined;
   CouponsList: undefined;
+  EventsList: undefined;
+  BookingsList: undefined;
   CouponScreen: { couponId: string };
+  EventScreen: { eventId: string };
+  BookingScreen: { bookingId: string };
 };

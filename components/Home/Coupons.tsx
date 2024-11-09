@@ -8,7 +8,7 @@ import Colors from '../../constants/Colors'; // Import the Colors object
 const Coupons = () => {
   const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
   
-  const handleCouponPress = (coupon) => {
+  const handleCouponPress = (coupon: { id: string; file: string; name: string; applicationFile: string; applicationName: string; }) => {
     console.log('Coupon clicked:', coupon);
     navigation.navigate('CouponScreen', { couponId : coupon.id });
   };

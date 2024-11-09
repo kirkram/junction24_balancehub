@@ -13,9 +13,12 @@ const Home = () => {
   const handlePress = (section: string) => {
     if (section === 'Coupons') {
       navigation.navigate('CouponsList');
+    } else if (section === 'Events') {
+      navigation.navigate('EventsList');
+    } else if (section === 'Bookings') {
+      navigation.navigate('BookingsList');
     } else {
       console.log(`${section} clicked`);
-      // Add navigation or other logic here
     }
   };
 
@@ -39,15 +42,13 @@ const Home = () => {
         <Events />
       </View>
       
-      <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Booking')}>
+      <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Bookings')}>
         <Text style={styles.sectionTitle}>Booking</Text>
         <Icon name="chevron-forward" size={20} color="black" />
       </TouchableOpacity>
       <View style={styles.sectionContainer}>
         <Booking />
       </View>
-      
-      <Text>Home</Text>
     </ScrollView>
   );
 };

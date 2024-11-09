@@ -3,11 +3,15 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { LinearGradient } from 'expo-linear-gradient';
 import events from '../../Aava_Events.ts';
 import Colors from '../../constants/Colors.ts';
+import { NavigationProp, useNavigation } from '@react-navigation/native'
+import { HomeStackParamList } from '../../@types/navigation.ts';
 
 const Events = () => {
-  const handleEventPress = (event) => {
-    // Handle the event click here
+  const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
+
+  const handleEventPress = (event: { id: string; image: string; title: string; location: string }) => {
     console.log('Event clicked:', event);
+    navigation.navigate('EventScreen', { eventId: event.id });
   };
 
   const formatDate = (dateString) => {

@@ -2,10 +2,14 @@ import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import booking from '../../Aava_Booking.ts';
 import Colors from '../../constants/Colors.ts';
+import { NavigationProp, useNavigation } from '@react-navigation/native'
+import { HomeStackParamList } from '../../@types/navigation.ts';
 
 const Booking = () => {
-  const handleBookingPress = (booking) => {
-    // Handle the booking click here
+  const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
+
+  const handleBookingPress = (booking: { id: string; image: string; title: string; description: string}) => {
+    navigation.navigate('BookingScreen', { bookingId: booking.id });
     console.log('Booking clicked:', booking);
   };
 
