@@ -3,12 +3,12 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import Colors from '../../constants/Colors';
-import HomeWelcome from '../../components/Home/HomeWelcome';
-import Coupons from '../../components/Home/Coupons';
-import Events from '../../components/Home/Events';
-import Booking from '../../components/Home/Booking';
+import HomeWelcome from '../../components/Search/HomeWelcome';
+import Coupons from '../../components/Search/Coupons';
+import Events from '../../components/Search/Events';
+import Booking from '../../components/Search/Booking';
 
-const Tinder = () => {
+const Search = () => {
   const navigation = useNavigation<any>();
 
   const handlePress = (section: string) => {
@@ -94,4 +94,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Tinder;
+export default Search;

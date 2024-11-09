@@ -10,7 +10,7 @@ import HomeStackScreen from './stackScreens/HomeStackScreen';
 import HomeIcon from '../components/Icons/HomeIcon';
 import AiIcon from '../components/Icons/AiIcon';
 import SurveyStackScreen from './stackScreens/SurveyStackScreen';
-import TinderStackScreen from './stackScreens/TinderStackScreen';
+import SearchStackScreen from './stackScreens/SearchStackScreen';
 
 const BottomTabNavigation = () => {
   const Tab = createBottomTabNavigator();
@@ -25,7 +25,7 @@ const BottomTabNavigation = () => {
           switch (route.name) {
             case 'Home':
               return <HomeIcon color={color} />;
-            case 'Tinder':
+            case 'Search':
               return <AiIcon color={color} />;
             case 'Survey':
               return <AiIcon color={color} />;
@@ -57,10 +57,10 @@ const BottomTabNavigation = () => {
         }}
       />
       <Tab.Screen
-        name="Tinder"
-        component={TinderStackScreen}
+        name="Search"
+        component={SearchStackScreen}
         options={{
-          tabBarLabel: 'Tinder',
+          tabBarLabel: 'Search',
         }}
       />
       <Tab.Screen

@@ -6,7 +6,8 @@ export type menuNavigation ={
 
 export type BottomTabParamList = {
   Home: undefined;
-  Ai: undefined;
+  Search: undefined;
+  Survey: undefined;
 };
 
 export type HomeStackParamList = {
@@ -21,7 +22,7 @@ export type HomeStackParamList = {
   ContactUsScreen: undefined;
 };
 
-export type TinderStackParamList = {
+export type SearchStackParamList = {
   MainHome: undefined;
   CouponsList: undefined;
   EventsList: undefined;
