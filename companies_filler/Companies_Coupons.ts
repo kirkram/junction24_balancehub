@@ -2,7 +2,7 @@ export default [
   {
     projectId: "eb14eaee-7c6e-41e4-81f5-53201fdf16f1",
     name: "10% discount on massage",
-    description: "Get a 10% discount on massage provided by Aava specialist",
+    description: "Enjoy a rejuvenating experience with Aava specialist massages and get a 10% discount on your next session! Our skilled and experienced professionals are dedicated to providing the utmost relaxation and care. Whether you're looking to relieve stress, ease muscle tension, or simply pamper yourself, Aava specialists tailor each massage to meet your unique needs. Book now to take advantage of this exclusive offer and let our experts help you unwind, re-energize, and feel your best. Don't miss out—refresh your body and mind with a 10% discount on all massage services!",
     colorPrimary: "#525252",
     applicationId: "b6b1a0bc-ad94-4c38-96d5-15c24f108385",
     applicationName: "Aava",
@@ -15,7 +15,7 @@ export default [
   {
     projectId: "0f051eb3-788b-4fe2-b5ea-93b382e462d3",
     name: "15% discount for the dentist appointment",
-    description: "Next Aava dentist appointment will recieve a discount of 15% ",
+    description: "Take advantage of a special offer on your next visit to Aava Dental! Schedule your appointment today and enjoy a 15% discount on all dental services. Whether you’re coming in for a routine cleaning, advanced dental treatment, or cosmetic work, our skilled professionals are dedicated to providing exceptional care in a comfortable environment. Don't miss out on this chance to prioritize your dental health while saving on costs. Book your next Aava dentist appointment now and receive an exclusive 15% discount for a healthier, brighter smile!",
     colorPrimary: "#ff2626",
     applicationId: "e91f28e7-0319-43ac-b4a9-af29191a6b28",
     applicationName: "Aava",
@@ -28,7 +28,7 @@ export default [
   {
     projectId: "eb543fbb-6c05-4879-a270-7dd2949a6a6a",
     name: "WalkDog gifts a free walk",
-    description: "Get a free one-time dogwalking service if you are a Aava customer",
+    description: "As a valued Aava customer, you’re eligible for an exclusive offer: enjoy a free one-time dog-walking service! Treat your furry friend to a refreshing outing with our trusted dog walkers, who provide the utmost care and attention. Whether you’re busy or just want to give your dog an extra bit of outdoor time, our service is here to make things easier. This complimentary dog-walking session is a one-time benefit just for Aava customers. Take advantage of this offer to ensure your pet gets the exercise and care they deserve—on us!",
     colorPrimary: "#424f62",
     applicationId: "b37a8a4e-9a66-4168-a9a3-41db5ba0aa2f",
     applicationName: "Aava",
@@ -42,7 +42,7 @@ export default [
     projectId: "4cd03560-7209-4ca3-bfdb-e2168da68980",
     name: "10% on HealthyFood delivery",
     description:
-      "Get a 10% discount on your healthy food delivery",
+      "Enjoy a 10% discount on your next healthy food delivery! Treat yourself to nutritious, delicious meals crafted with high-quality ingredients and delivered straight to your door. Whether you're aiming to eat cleaner, support your wellness goals, or simply savor balanced meals without the hassle of cooking, our healthy food delivery service has you covered. Use this special offer to make wholesome eating more affordable and convenient. Place your order today and take advantage of this 10% discount for fresh, flavorful, and health-conscious meals!",
     colorPrimary: "#748480",
     applicationId: "ac722858-ce9a-47a1-9b86-9fa852610187",
     applicationName: "Aava",
@@ -55,7 +55,7 @@ export default [
   {
     projectId: "4cd03560-7209-4ca3-bfdb-e2168da68980",
     name: "Gym membership 10% discount",
-    description: "Get a 10% discount when creating a new gym membership",
+    description: "Start your fitness journey with an exclusive 10% discount on a new gym membership! Join today and enjoy full access to state-of-the-art equipment, group classes, personal training sessions, and a welcoming fitness community. Whether you're looking to build strength, improve flexibility, or simply boost your overall health, our gym is equipped to help you reach your goals. This special offer is available for all new members, so take the first step toward a healthier lifestyle. Sign up now and save 10% on your new gym membership—your fitness transformation starts here!",
     colorPrimary: "#748480",
     applicationId: "ac722858-ce9a-47a1-9b86-9fa852610187",
     applicationName: "Aava",
@@ -68,7 +68,7 @@ export default [
   {
     projectId: "0f051eb3-788b-4fe2-b5ea-93b382e462d3",
     name: "Online Gym training for free",
-    description: "After buying the online gym subscription before 31.12 the first training with your coach is free",
+    description: "Sign up for an online gym subscription by December 31st, and enjoy a free first training session with a personal coach! This special offer gives you the guidance of a professional trainer to help kickstart your fitness journey with tailored advice and support. Whether you’re new to fitness or looking to reach new goals, our expert coaches will create a customized plan suited to your needs. Don’t miss out on this opportunity to maximize your results with the help of a coach—subscribe online by 31.12 and get your first session for free!",
     colorPrimary: "#ff2626",
     applicationId: "e91f28e7-0319-43ac-b4a9-af29191a6b28",
     applicationName: "Aava",
@@ -82,7 +82,7 @@ export default [
     projectId: "eb543fbb-6c05-4879-a270-7dd2949a6a6a",
     name: "Espoo SPA 10% off",
     description:
-      "Get a 10% off when visiting the Espoo SPA with this coupon",
+      "Enjoy a relaxing escape with 10% off your visit to the Espoo SPA when you bring this coupon! Treat yourself to a day of rejuvenation with luxurious spa services, including saunas, massages, and wellness treatments designed to refresh both body and mind. Whether you're looking to unwind, recharge, or pamper yourself with some well-deserved relaxation, the Espoo SPA provides the perfect retreat. Use this exclusive coupon to experience all the soothing amenities and services with a 10% discount. Don’t miss out—redeem your coupon and enjoy a serene spa day in Espoo!",
     colorPrimary: "#424f62",
     applicationId: "b37a8a4e-9a66-4168-a9a3-41db5ba0aa2f",
     applicationName: "Aava",
@@ -95,7 +95,7 @@ export default [
   {
     projectId: "4cd03560-7209-4ca3-bfdb-e2168da68980",
     name: "GoodMeditation app discount",
-    description: "Get a 25% off the yearly subscription to the GoodMeditation app with this coupon",
+    description: "Enhance your mindfulness journey with an exclusive 25% discount on a yearly subscription to the GoodMeditation app when you use this coupon! Unlock unlimited access to a wide range of guided meditations, relaxation exercises, sleep aids, and mindfulness tools—all designed to support your mental well-being and help you find calm in everyday life. Whether you're new to meditation or looking to deepen your practice, GoodMeditation offers expert-led sessions that fit your lifestyle and needs. Don’t miss out on this chance to save 25% and make mindfulness a lasting part of your routine.",
     colorPrimary: "#748480",
     applicationId: "ac722858-ce9a-47a1-9b86-9fa852610187",
     applicationName: "Aava",
@@ -108,7 +108,7 @@ export default [
   {
     projectId: "4cd03560-7209-4ca3-bfdb-e2168da68980",
     name: "LearnWell new user discount 12%",
-    description: "Get LearnWell subscription for 12% off only this month",
+    description: "Boost your learning journey with a 12% discount on a LearnWell subscription, available exclusively this month! Gain access to a vast library of expert-led courses, interactive tutorials, and personalized study resources that cater to your educational goals. Whether you’re looking to upskill, explore new subjects, or advance in your career, LearnWell provides the tools and support to help you succeed. Don’t miss this limited-time offer—subscribe now and enjoy 12% off to unlock your full learning potential with LearnWell!",
     colorPrimary: "#748480",
     applicationId: "ac722858-ce9a-47a1-9b86-9fa852610187",
     applicationName: "Aava",
@@ -121,7 +121,7 @@ export default [
   {
     projectId: "eb543fbb-6c05-4879-a270-7dd2949a6a6a",
     name: "-50% Oncology Screening",
-    description: "Aava grants a 50% cancer screening dedicated to the Fight Cancer Month",
+    description: "In honor of Fight Cancer Month, Aava is offering a 50% discount on cancer screening services to encourage early detection and support the fight against cancer. This limited-time offer allows you to prioritize your health and take proactive steps toward a cancer-free future. Aava’s professional healthcare team provides comprehensive screenings in a comfortable and supportive environment, ensuring you receive the best care possible. Don’t miss out on this important opportunity—book your cancer screening today and take advantage of the 50% discount during Fight Cancer Month!",
     colorPrimary: "#424f62",
     applicationId: "b37a8a4e-9a66-4168-a9a3-41db5ba0aa2f",
     applicationName: "Aava",
@@ -134,7 +134,7 @@ export default [
   {
     projectId: "eb543fbb-6c05-4879-a270-7dd2949a6a6a",
     name: "-25% on ComfyChair",
-    description: "Be comfortable at home! 25% on any purchase",
+    description: "Make your home even more comfortable with 25% off any purchase! Whether you’re looking to upgrade your furniture, add cozy home decor, or refresh your living space with new essentials, this special offer is your chance to save. Enjoy a wide selection of high-quality items designed to enhance comfort and style in your home. Don’t miss out on this limited-time opportunity to transform your living space while saving 25%. Shop now and create the perfect home environment where you can truly relax and unwind!",
     colorPrimary: "#424f62",
     applicationId: "b37a8a4e-9a66-4168-a9a3-41db5ba0aa2f",
     applicationName: "Aava",
@@ -148,7 +148,7 @@ export default [
     projectId: "eb543fbb-6c05-4879-a270-7dd2949a6a6a",
     name: "-10% on sleep masks",
     description:
-      "Any sleep mask from SleepySleep online store for 10% less",
+      "Sleep better with a 10% discount on any sleep mask from the SleepySleep online store! Choose from a variety of premium, comfortable sleep masks designed to block out light and help you achieve a restful night’s sleep. Whether you’re looking for a soft, breathable fabric or a soothing design, SleepySleep offers the perfect mask for a peaceful slumber. Don’t miss out on this exclusive offer—shop now and get 10% off your purchase to enhance your sleep quality and wake up refreshed!",
     colorPrimary: "#424f62",
     applicationId: "b37a8a4e-9a66-4168-a9a3-41db5ba0aa2f",
     applicationName: "Aava",
