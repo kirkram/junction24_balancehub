@@ -7,8 +7,6 @@ import HomeWelcome from '../../components/Home/HomeWelcome';
 import Coupons from '../../components/Home/Coupons';
 import Events from '../../components/Home/Events';
 import Booking from '../../components/Home/Booking';
-// import Sustainability from '../components/Home/Sustainability';
-// import ContactUs from '../components/Home/ContactUs';
 
 const Home = () => {
   const navigation = useNavigation<any>();
@@ -60,15 +58,9 @@ const Home = () => {
       <TouchableOpacity onPress={() => handlePress('Sustainability')}>
         <Text style={styles.infoContainer}>Sustainability</Text>
       </TouchableOpacity>
-      {/* <View style={styles.infoContainer}>
-          <Sustainability />
-       </View> */}
 
       <TouchableOpacity onPress={() => handlePress('Contact Us')}>
         <Text style={styles.infoContainer}>Contact Us</Text>
-        {/* <View style={styles.infoContainer}>
-          <ContactUs />
-         </View> */}
       </TouchableOpacity>
       
       
