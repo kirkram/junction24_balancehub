@@ -55,6 +55,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     color: 'white',
     marginTop: 5, // Adjust this value to control the spacing between welcomeText and username
+    fontWeight: 'bold',
   },
   image: {
     width: 50,
