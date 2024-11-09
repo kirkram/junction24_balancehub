@@ -6,8 +6,8 @@ const Colors = {
     fontBlack: "rgba(0, 0, 0, 1)",
     lightBg: "rgba(255, 255, 255, 1)", // White with full opacity
     middleBg: "rgba(204, 204, 204, 1)",
-    darkBg: "rgba(204, 204, 204, 1)",
-    overlay: "rgba(145, 171, 147, 0.3)",
+    bookingBottom: "rgba(200, 197, 160, 0.7)", // same as primary but with 70% opacity
+    overlay: "rgba(145, 171, 147, 0.3)", 
     bottomText: "rgba(90, 90, 90, 1)",
     gradient1: 'rgba(6, 27, 30, 0.6)', 
     gradient2: 'rgba(6, 44, 33, 0.5)'

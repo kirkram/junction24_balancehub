@@ -16,11 +16,11 @@ const Header = ({ screenName }: { screenName: string }) => {
   return (
     <View style={styles.headerContainer}>
       <TouchableOpacity style={styles.searchIconContainer} onPress={handleSearchIconPress}>
-        <SearchIcon color={Colors.ss.font} />
+        <SearchIcon color={Colors.ss.font} size={30} />
       </TouchableOpacity>
       <Text style={styles.headerText}>{screenName}</Text>
       <TouchableOpacity style={styles.userIconContainer} onPress={handleUserIconPress}>
-        <UserIcon color={Colors.ss.font} />
+        <UserIcon color={Colors.ss.font} size={30} />
       </TouchableOpacity>
     </View>
   );

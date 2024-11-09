@@ -8,7 +8,8 @@ import Colors from '../constants/Colors'; // Import the Colors object
 import { Platform } from 'react-native';
 import HomeStackScreen from './stackScreens/HomeStackScreen';
 import HomeIcon from '../components/Icons/HomeIcon';
-import AiIcon from '../components/Icons/AiIcon';
+// import AiIcon from '../components/Icons/AiIcon';
+import RatingIcon from '../components/Icons/RatingIcon';
 import SurveyStackScreen from './stackScreens/SurveyStackScreen';
 import SearchStackScreen from './stackScreens/SearchStackScreen';
 
@@ -25,10 +26,10 @@ const BottomTabNavigation = () => {
           switch (route.name) {
             case 'Home':
               return <HomeIcon color={color} />;
-            case 'Search':
-              return <AiIcon color={color} />;
-            case 'Survey':
-              return <AiIcon color={color} />;
+            case 'Rating':
+              return <RatingIcon color={color} />;
+            // case 'Survey':
+            //   return <SurveyIcon color={color} />;
             default:
               return null;
           }
@@ -57,19 +58,19 @@ const BottomTabNavigation = () => {
         }}
       />
       <Tab.Screen
-        name="Search"
+        name="Rating"
         component={SearchStackScreen}
         options={{
-          tabBarLabel: 'Search',
+          tabBarLabel: 'Rating',
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Survey"
         component={SurveyStackScreen}
         options={{
           tabBarLabel: 'Survey',
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };
