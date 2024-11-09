@@ -1,5 +1,6 @@
-import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import React from 'react';
+import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
 import events from '../../Aava_Events.ts';
 
 const Events = () => {
@@ -15,16 +16,23 @@ const Events = () => {
   };
 
   return (
-    <ScrollView horizontal showsHorizontalScrollIndicator={false} >
+    <ScrollView horizontal showsHorizontalScrollIndicator={false}>
       {events.map(event => (
         <TouchableOpacity key={event.id} onPress={() => handleEventPress(event)}>
           <View style={styles.eventContainer}>
             <Image source={{ uri: event.image }} style={styles.image} />
-            <View style={styles.textContainer}>
-              <Text style={styles.date}>{formatDate(event.date)}</Text>
-              <Text style={styles.title}>{event.title}</Text>
-              <Text style={styles.time}>{event.time.split(' - ')[0]}</Text>
-            </View>
+            <LinearGradient
+              colors={['rgba(0, 0, 255, 0.6)', 'rgba(0, 0, 255, 0.2)', 'transparent']}
+              start={[0, 1]}
+              end={[1, 0]}
+              style={styles.gradient}
+            >
+              <View style={styles.textContainer}>
+                <Text style={styles.date}>{formatDate(event.date)}</Text>
+                <Text style={styles.title}>{event.title}</Text>
+                <Text style={styles.time}>{event.time.split(' - ')[0]}</Text>
+              </View>
+            </LinearGradient>
           </View>
         </TouchableOpacity>
       ))}
@@ -35,27 +43,27 @@ const Events = () => {
 const styles = StyleSheet.create({
   eventContainer: {
     marginRight: 5,
-    marginLeft: 5,
-    marginTop: 5,
-    marginBottom: 5,
-    width: 175, // Smaller width
+    width: 250,
     position: 'relative',
   },
   image: {
     width: '100%',
-    height: 100, // Smaller height
-    borderRadius: 10, // Rounded corners
+    height: 100,
+    borderRadius: 10,
+  },
+  gradient: {
+    ...StyleSheet.absoluteFillObject,
+    borderRadius: 10,
   },
   textContainer: {
     position: 'absolute',
-    top: 0,
+    bottom: 0,
     left: 0,
     right: 0,
-    bottom: 0,
-    justifyContent: 'flex-end',
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 255, 0.35)', // Blue background dimming
-    borderRadius: 10, // Rounded corners
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
   },
   date: {
     color: 'white',
