@@ -9,7 +9,7 @@ const Booking = () => {
   };
 
   return (
-    <ScrollView horizontal alwaysBounceVertical showsHorizontalScrollIndicator={false} >
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} >
       {booking.map(event => (
         <TouchableOpacity key={event.id} onPress={() => handleBookingPress(event)}>
           <View style={styles.eventContainer}>

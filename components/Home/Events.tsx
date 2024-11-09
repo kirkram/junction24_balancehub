@@ -15,7 +15,7 @@ const Events = () => {
   };
 
   return (
-    <ScrollView horizontal alwaysBounceVertical showsHorizontalScrollIndicator={false} >
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} >
       {events.map(event => (
         <TouchableOpacity key={event.id} onPress={() => handleEventPress(event)}>
           <View style={styles.eventContainer}>

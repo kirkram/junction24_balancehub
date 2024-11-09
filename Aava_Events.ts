@@ -37,7 +37,7 @@ export default [
   },
   {
     id: "event5",
-    title: "Mini Golf Tournament",
+    title: "Mini Golf",
     date: "2025-08-20",
     time: "14:00 - 17:00",
     location: "Megazone Helsinki, Salomonkatu 15, Helsinki",
@@ -91,7 +91,7 @@ export default [
   },
   {
     id: "event11",
-    title: "Guest Speakers Event",
+    title: "Guest Speaker",
     date: "2025-09-12",
     time: "16:00 - 18:00",
     location: "Conference Center, Helsinki",

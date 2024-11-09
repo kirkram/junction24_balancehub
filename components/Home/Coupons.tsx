@@ -7,7 +7,7 @@ const Coupons = () => {
     console.log('Coupon clicked:', coupon);
   };
   return (
-    <ScrollView horizontal alwaysBounceVertical showsHorizontalScrollIndicator={false} >
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} >
       {coupons.map(coupon => (
         <TouchableOpacity key={coupon.id} onPress={() => handleCouponPress(coupon)}>
           <View style={styles.couponeContainer}>
