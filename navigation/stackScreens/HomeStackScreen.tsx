@@ -1,15 +1,15 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react'
 import { HomeStackParamList } from '../../@types/navigation';
-import Home from '../../screens/Home';
-import CouponsList from '../../screens/CouponsList';
-import CouponScreen from '../../screens/CouponScreen';
-import EventsList from '../../screens/EventsList';
-import EventScreen from '../../screens/EventScreen';
-import BookingsList from '../../screens/BookingsList';
-import BookingScreen from '../../screens/BookingScreen';
-import SustainabilityScreen from '../../screens/SustainabilityScreen';
-import ContactUsScreen from '../../screens/ContactUsScreen';
+import Home from '../../screens/Home/Home';
+import CouponsList from '../../screens/Home/CouponsList';
+import CouponScreen from '../../screens/Home/CouponScreen';
+import EventsList from '../../screens/Home/EventsList';
+import EventScreen from '../../screens/Home/EventScreen';
+import BookingsList from '../../screens/Home/BookingsList';
+import BookingScreen from '../../screens/Home/BookingScreen';
+import SustainabilityScreen from '../../screens/Home/SustainabilityScreen';
+import ContactUsScreen from '../../screens/Home/ContactUsScreen';
 
 
 const HomeStackScreen = () => {

@@ -3,15 +3,15 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
-import bookings from '../Aava_Booking.ts'
-import { HomeStackParamList } from '../@types/navigation.ts';
+import events from '../../Aava_Events.ts'
+import { HomeStackParamList } from '../../@types/navigation.ts';
 
-const BookingsList = () => {
+const EventsList = () => {
   const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
 
-  const handleBookingPress = (booking: { id: string; image: string; title: string; }) => {
-    console.log('Booking clicked:', booking);
-    navigation.navigate('BookingScreen', { bookingId: booking.id });
+  const handleEventPress = (event: { id: string; image: string; title: string; location: string }) => {
+    console.log('Event clicked:', event);
+    navigation.navigate('EventScreen', { eventId: event.id });
   };
 
   return (
@@ -20,10 +20,10 @@ const BookingsList = () => {
         <Icon name="chevron-back" size={20} color="black" />
       </TouchableOpacity>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {bookings.map(booking => (
-          <TouchableOpacity key={booking.id} onPress={() => handleBookingPress(booking)}>
-            <View style={styles.bookingContainer}>
-              <Image source={{ uri: booking.image }} style={styles.image} />
+        {events.map(event => (
+          <TouchableOpacity key={event.id} onPress={() => handleEventPress(event)}>
+            <View style={styles.eventContainer}>
+              <Image source={{ uri: event.image }} style={styles.image} />
                 <LinearGradient
                 colors={['rgba(145, 171, 147, 0.6)', 'rgba(132, 160, 147, 0.3)', 'transparent']}
                 start={[0, 1]}
@@ -31,7 +31,8 @@ const BookingsList = () => {
                 style={styles.gradient}
                 >
                 <View style={styles.textContainer}>
-                  <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail"> {booking.title} </Text>
+                  <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail"> {event.title} </Text>
+                  <Text style={styles.locationText}> {event.location} </Text>
                 </View>
                 </LinearGradient>
             </View>
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
   },
-  bookingContainer: {
+  eventContainer: {
     marginVertical: 5,
     width: '100%',
     position: 'relative',
@@ -90,4 +91,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BookingsList
+export default EventsList

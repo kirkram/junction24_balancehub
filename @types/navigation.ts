@@ -21,6 +21,18 @@ export type HomeStackParamList = {
   ContactUsScreen: undefined;
 };
 
+export type TinderStackParamList = {
+  MainHome: undefined;
+  CouponsList: undefined;
+  EventsList: undefined;
+  BookingsList: undefined;
+  CouponScreen: { couponId: string };
+  EventScreen: { eventId: string };
+  BookingScreen: { bookingId: string };
+  SustainabilityScreen: undefined;
+  ContactUsScreen: undefined;
+};
+
 export type SurveyStackParamList = {
   Survey: undefined;
 };

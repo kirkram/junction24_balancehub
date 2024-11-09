@@ -2,15 +2,13 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import Colors from '../constants/Colors';
-import HomeWelcome from '../components/Home/HomeWelcome';
-import Coupons from '../components/Home/Coupons';
-import Events from '../components/Home/Events';
-import Booking from '../components/Home/Booking';
-// import Sustainability from '../components/Home/Sustainability';
-// import ContactUs from '../components/Home/ContactUs';
+import Colors from '../../constants/Colors';
+import HomeWelcome from '../../components/Home/HomeWelcome';
+import Coupons from '../../components/Home/Coupons';
+import Events from '../../components/Home/Events';
+import Booking from '../../components/Home/Booking';
 
-const Home = () => {
+const Tinder = () => {
   const navigation = useNavigation<any>();
 
   const handlePress = (section: string) => {
@@ -56,21 +54,6 @@ const Home = () => {
       <View style={styles.sectionContainer}>
         <Booking />
       </View>
-
-      <TouchableOpacity onPress={() => handlePress('Sustainability')}>
-        <Text style={styles.infoContainer}>Sustainability</Text>
-      </TouchableOpacity>
-      {/* <View style={styles.infoContainer}>
-          <Sustainability />
-       </View> */}
-
-      <TouchableOpacity onPress={() => handlePress('Contact Us')}>
-        <Text style={styles.infoContainer}>Contact Us</Text>
-        {/* <View style={styles.infoContainer}>
-          <ContactUs />
-         </View> */}
-      </TouchableOpacity>
-      
       
     </ScrollView>
   );
@@ -111,4 +94,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Home;
+export default Tinder;

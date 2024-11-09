@@ -1,15 +1,16 @@
 // src/navigation/BottomTabNavigation.tsx
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Home from '../screens/Home';
-import Ai from '../screens/Survey';
+import Home from '../screens/Home/Home';
+import Ai from '../screens/Survey/Survey';
 import Header from '../components/Home/Header'; // Import the Header component
 import Colors from '../constants/Colors'; // Import the Colors object
 import { Platform } from 'react-native';
 import HomeStackScreen from './stackScreens/HomeStackScreen';
 import HomeIcon from '../components/Icons/HomeIcon';
 import AiIcon from '../components/Icons/AiIcon';
-import SurveyStackScreen from './stackScreens/surveyStackScreen';
+import SurveyStackScreen from './stackScreens/SurveyStackScreen';
+import TinderStackScreen from './stackScreens/TinderStackScreen';
 
 const BottomTabNavigation = () => {
   const Tab = createBottomTabNavigator();
@@ -24,6 +25,8 @@ const BottomTabNavigation = () => {
           switch (route.name) {
             case 'Home':
               return <HomeIcon color={color} />;
+            case 'Tinder':
+              return <AiIcon color={color} />;
             case 'Survey':
               return <AiIcon color={color} />;
             default:
@@ -51,6 +54,13 @@ const BottomTabNavigation = () => {
         component={HomeStackScreen}
         options={{
           tabBarLabel: 'Home',
+        }}
+      />
+      <Tab.Screen
+        name="Tinder"
+        component={TinderStackScreen}
+        options={{
+          tabBarLabel: 'Tinder',
         }}
       />
       <Tab.Screen

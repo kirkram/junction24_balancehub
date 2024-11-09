@@ -2,46 +2,46 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import coupons from '../Aava_Coupons.ts';
+import bookings from '../../Aava_Booking.ts';
 
 type RouteParams = {
-    couponId: string;
+    bookingId: string;
 };
 
-const CouponScreen = () => {
+const BookingScreen = () => {
     const navigation = useNavigation();
     const route = useRoute<RouteProp<{ params: RouteParams }, 'params'>>();
-    const { couponId } = route.params;
-    const coupon = coupons.find(c => c.id === couponId);
+    const { bookingId } = route.params;
+    const booking = bookings.find(e => e.id === bookingId);
 
-    if (!coupon) {
+    if (!booking) {
         return (
             <View style={styles.container}>
-                <Text>Coupon not found</Text>
+                <Text>Booking not found</Text>
             </View>
         );
     }
 
-    const handleActivateCoupon = () => {
-        console.log('Coupon activated:', coupon);
+    const handleBookEvent = () => {
+        console.log('Booking confirmed:', booking);
     };
 
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
-            <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
-                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                    <Icon name="chevron-back" size={20} color="black" style={{marginRight: 10}} />
-                    <Image source={{ uri: coupon.applicationFile }} style={styles.applicationImage} />
-                    <Text style={styles.applicationName}>{coupon.applicationName}</Text>
+            <View style={styles.header}>
+                <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
+                    <Icon name="chevron-back" size={20} color="black" />
+                </TouchableOpacity>
+                <View style={styles.dateContainer}>
+                    <Text style={styles.dateText}>{booking.title}</Text>
                 </View>
-            </TouchableOpacity>
-            <Image source={{ uri: coupon.file }} style={styles.image} />
-            <Text style={styles.title}>{coupon.name}</Text>
-            <Text style={styles.description}>{coupon.description}</Text>
+            </View>
+            <Image source={{ uri: booking.image }} style={styles.image} />
+            <Text style={styles.title}>{booking.title}</Text>
+            <Text style={styles.description}>{booking.description}</Text>
             <View style={styles.bottomContainer}>
-                <Text style={styles.expireText}>Expire date: {new Date(coupon.expiringDate).toLocaleDateString()}</Text>
-                <TouchableOpacity style={styles.activateButton} onPress={handleActivateCoupon}>
-                    <Text style={styles.activateButtonText}>Activate Coupon</Text>
+                <TouchableOpacity style={styles.bookButton} onPress={handleBookEvent}>
+                    <Text style={styles.bookButtonText}>Book Now</Text>
                 </TouchableOpacity>
             </View>
         </ScrollView>
@@ -59,19 +59,22 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
     },
-    backButton: {
-        alignSelf: 'flex-start',
-        padding: 8,
+    header: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        width: '100%',
+        justifyContent: 'space-between',
         marginBottom: 16,
     },
-    applicationImage: {
-        width: 30,
-        height: 30,
-        borderRadius: 10,
-        marginRight: 5,
+    backButton: {
+        padding: 8,
     },
-    applicationName: {
-        fontSize: 14,
+    dateContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        position: 'absolute',
+        left: '50%',
+        transform: [{ translateX: -50 }],
     },
     image: {
         width: '100%',
@@ -97,22 +100,22 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         paddingBottom: 3,
     },
-    expireText: {
+    dateText: {
         fontSize: 14,
         color: 'gray',
-        marginBottom: 16,
+        fontWeight: 'bold',
     },
-    activateButton: {
+    bookButton: {
         backgroundColor: '#007bff',
         paddingVertical: 12,
         paddingHorizontal: 32,
         borderRadius: 7,
     },
-    activateButtonText: {
+    bookButtonText: {
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
     },
 });
 
-export default CouponScreen;
+export default BookingScreen;

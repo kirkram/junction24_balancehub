@@ -2,7 +2,7 @@ import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from 'react-nati
 import { NavigationProp, useNavigation } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import { HomeStackParamList } from '../@types/navigation.ts';
+import { HomeStackParamList } from '../../@types/navigation.ts';
 
 const ContactUsScreen = () => {
   const navigation = useNavigation<NavigationProp<HomeStackParamList>>();

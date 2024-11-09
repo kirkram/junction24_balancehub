@@ -1,7 +1,7 @@
 import { SurveyStackParamList } from '../../@types/navigation';
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Survey from '../../screens/Survey';
+import Survey from '../../screens/Survey/Survey';
 
 const SurveyStackScreen = () => {
     const SurveyStack = createNativeStackNavigator<SurveyStackParamList>();

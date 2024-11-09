@@ -2,28 +2,28 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import bookings from '../Aava_Booking.ts';
+import events from '../../Aava_Events.ts';
 
 type RouteParams = {
-    bookingId: string;
+    eventId: string;
 };
 
-const BookingScreen = () => {
+const EventScreen = () => {
     const navigation = useNavigation();
-    const route = useRoute<RouteProp<{ params: RouteParams }, 'params'>>();
-    const { bookingId } = route.params;
-    const booking = bookings.find(e => e.id === bookingId);
+    const route = useRoute<RouteProp<{ params: RouteParams }, 'params'>>(); 
+    const { eventId } = route.params;
+    const event = events.find(e => e.id === eventId);
 
-    if (!booking) {
+    if (!event) {
         return (
             <View style={styles.container}>
-                <Text>Booking not found</Text>
+                <Text>Event not found</Text>
             </View>
         );
     }
 
-    const handleBookEvent = () => {
-        console.log('Booking confirmed:', booking);
+    const handleRegisterEvent = () => {
+        console.log('Event registered:', event);
     };
 
     return (
@@ -33,15 +33,16 @@ const BookingScreen = () => {
                     <Icon name="chevron-back" size={20} color="black" />
                 </TouchableOpacity>
                 <View style={styles.dateContainer}>
-                    <Text style={styles.dateText}>{booking.title}</Text>
+                    <Icon name="calendar" size={20} color="black" style={{ marginRight: 5 }} />
+                    <Text style={styles.dateText}>{new Date(event.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</Text>
                 </View>
             </View>
-            <Image source={{ uri: booking.image }} style={styles.image} />
-            <Text style={styles.title}>{booking.title}</Text>
-            <Text style={styles.description}>{booking.description}</Text>
+            <Image source={{ uri: event.image }} style={styles.image} />
+            <Text style={styles.title}>{event.title}</Text>
+            <Text style={styles.description}>{event.description}</Text>
             <View style={styles.bottomContainer}>
-                <TouchableOpacity style={styles.bookButton} onPress={handleBookEvent}>
-                    <Text style={styles.bookButtonText}>Book Now</Text>
+                <TouchableOpacity style={styles.registerButton} onPress={handleRegisterEvent}>
+                    <Text style={styles.registerButtonText}>Take Part</Text>
                 </TouchableOpacity>
             </View>
         </ScrollView>
@@ -105,17 +106,17 @@ const styles = StyleSheet.create({
         color: 'gray',
         fontWeight: 'bold',
     },
-    bookButton: {
+    registerButton: {
         backgroundColor: '#007bff',
         paddingVertical: 12,
         paddingHorizontal: 32,
         borderRadius: 7,
     },
-    bookButtonText: {
+    registerButtonText: {
         color: 'white',
         fontSize: 16,
         fontWeight: 'bold',
     },
 });
 
-export default BookingScreen;
+export default EventScreen;
