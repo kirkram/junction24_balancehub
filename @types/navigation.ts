@@ -17,4 +17,6 @@ export type HomeStackParamList = {
   CouponScreen: { couponId: string };
   EventScreen: { eventId: string };
   BookingScreen: { bookingId: string };
+  SustainabilityScreen: undefined;
+  ContactUsScreen: undefined;
 };
