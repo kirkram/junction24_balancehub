@@ -28,7 +28,16 @@ const Search = () => {
   return (
     <ScrollView style={styles.container}>
       <HomeWelcome colorr="blue" />
-      
+
+      <View style={styles.likeDislikeContainer}>
+        <TouchableOpacity style={styles.dislikeButton} onPress={() => handlePress('Like')}>
+          <Icon name="thumbs-down" size={40} color="rgba(150, 161, 147, 0.8)" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.likeButton} onPress={() => handlePress('Dislike')}>
+          <Icon name="thumbs-up" size={40} color="rgba(150, 161, 147, 0.8)" />
+        </TouchableOpacity>
+      </View>
+
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Coupons')}>
         <Text style={styles.sectionTitle}>Coupons</Text>
         <Icon name="chevron-forward" size={20} color="black" />
@@ -36,7 +45,7 @@ const Search = () => {
       <View style={styles.sectionContainer}>
         <Coupons />
       </View>
-      
+
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Events')}>
         <Text style={styles.sectionTitle}>Events</Text>
         <Icon name="chevron-forward" size={20} color="black" />
@@ -44,7 +53,7 @@ const Search = () => {
       <View style={styles.sectionContainer}>
         <Events />
       </View>
-      
+
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Bookings')}>
         <Text style={styles.sectionTitle}>Booking</Text>
         <Icon name="chevron-forward" size={20} color="black" />
@@ -53,15 +62,6 @@ const Search = () => {
         <Booking />
       </View>
 
-      <View style={styles.likeDislikeContainer}>
-      <TouchableOpacity style={styles.dislikeButton} onPress={() => handlePress('Like')}>
-          <Icon name="thumbs-down" size={40} color="rgba(150, 161, 147, 0.8)" />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.likeButton} onPress={() => handlePress('Dislike')}>
-          <Icon name="thumbs-up" size={40} color="rgba(150, 161, 147, 0.8)" />
-        </TouchableOpacity>
-      </View>
-      
     </ScrollView>
   );
 };
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   },
   sectionContainer: {
     marginTop: 3,
-    marginBottom: 7, 
+    marginBottom: 7,
   },
   infoContainer: {
     marginTop: 20,
@@ -102,8 +102,8 @@ const styles = StyleSheet.create({
   likeDislikeContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 20,
-    marginBottom: 40,
+    marginTop: 30,
+    marginBottom: 20,
   },
   likeButton: {
     flexDirection: 'row',
