@@ -4,7 +4,7 @@ import Colors from '../../constants/Colors.ts';
 
 const HomeWelcome = ({ colorr }: { colorr: string }) => {
   const username = "Heidi Kekkonnen"; 
-  const backgroundImageUrl = "https://www.aava.fi/wp-content/smush-webp/2022/01/etusivu_hero.jpg.webp"; // background image link
+  const backgroundImageUrl = "https://images.pexels.com/photos/18201091/pexels-photo-18201091/free-photo-of-auckland-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=640&h=750&dpr=2"; // background image link
   // const imageUrl = "https://www.aava.fi/wp-content/smush-webp/2022/01/etusivu_hero.jpg.webp"; // possible image link
 
   return (
