@@ -2,10 +2,13 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
+import Colors from '../constants/Colors';
 import HomeWelcome from '../components/Home/HomeWelcome';
 import Coupons from '../components/Home/Coupons';
 import Events from '../components/Home/Events';
 import Booking from '../components/Home/Booking';
+// import Sustainability from '../components/Home/Sustainability';
+// import ContactUs from '../components/Home/ContactUs';
 
 const Home = () => {
   const navigation = useNavigation<any>();
@@ -17,6 +20,10 @@ const Home = () => {
       navigation.navigate('EventsList');
     } else if (section === 'Bookings') {
       navigation.navigate('BookingsList');
+    } else if (section === 'Sustainability') {
+      navigation.navigate('SustainabilityScreen');
+    } else if (section === 'Contact Us') {
+      navigation.navigate('ContactUsScreen');
     } else {
       console.log(`${section} clicked`);
     }
@@ -49,6 +56,22 @@ const Home = () => {
       <View style={styles.sectionContainer}>
         <Booking />
       </View>
+
+      <TouchableOpacity onPress={() => handlePress('Sustainability')}>
+        <Text style={styles.infoContainer}>Sustainability</Text>
+      </TouchableOpacity>
+      {/* <View style={styles.infoContainer}>
+          <Sustainability />
+       </View> */}
+
+      <TouchableOpacity onPress={() => handlePress('Contact Us')}>
+        <Text style={styles.infoContainer}>Contact Us</Text>
+        {/* <View style={styles.infoContainer}>
+          <ContactUs />
+         </View> */}
+      </TouchableOpacity>
+      
+      
     </ScrollView>
   );
 };
@@ -76,7 +99,15 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
   },
   sectionContainer: {
+    marginTop: 3,
     marginBottom: 7, 
+  },
+  infoContainer: {
+    marginTop: 20,
+    marginBottom: 5,
+    paddingBottom: 15,
+    color: Colors.ss.bottomText,
+    fontSize: 20,
   },
 });
 
