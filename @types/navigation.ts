@@ -18,3 +18,7 @@ export type HomeStackParamList = {
   EventScreen: { eventId: string };
   BookingScreen: { bookingId: string };
 };
+
+export type SurveyStackParamList = {
+  Survey: undefined;
+};

@@ -2,13 +2,14 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
-import Ai from '../screens/Ai';
+import Ai from '../screens/Survey';
 import Header from '../components/Home/Header'; // Import the Header component
 import Colors from '../constants/Colors'; // Import the Colors object
 import { Platform } from 'react-native';
 import HomeStackScreen from './stackScreens/HomeStackScreen';
 import HomeIcon from '../components/Icons/HomeIcon';
 import AiIcon from '../components/Icons/AiIcon';
+import SurveyStackScreen from './stackScreens/surveyStackScreen';
 
 const BottomTabNavigation = () => {
   const Tab = createBottomTabNavigator();
@@ -23,7 +24,7 @@ const BottomTabNavigation = () => {
           switch (route.name) {
             case 'Home':
               return <HomeIcon color={color} />;
-            case 'Ai':
+            case 'Survey':
               return <AiIcon color={color} />;
             default:
               return null;
@@ -53,10 +54,10 @@ const BottomTabNavigation = () => {
         }}
       />
       <Tab.Screen
-        name="Ai"
-        component={Ai}
+        name="Survey"
+        component={SurveyStackScreen}
         options={{
-          tabBarLabel: 'Ai',
+          tabBarLabel: 'Survey',
         }}
       />
     </Tab.Navigator>
