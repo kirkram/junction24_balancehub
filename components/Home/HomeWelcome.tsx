@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Image, ImageBackground } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Colors from '../../constants/Colors.ts';
 
-const HomeHeadder = ({ colorr }: { colorr: string }) => {
+const HomeWelcome = ({ colorr }: { colorr: string }) => {
   const username = "Heidi Kekkonnen"; 
   const backgroundImageUrl = "https://www.aava.fi/wp-content/smush-webp/2022/01/etusivu_hero.jpg.webp"; // background image link
   // const imageUrl = "https://www.aava.fi/wp-content/smush-webp/2022/01/etusivu_hero.jpg.webp"; // possible image link
@@ -61,4 +61,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeHeadder;
+export default HomeWelcome;

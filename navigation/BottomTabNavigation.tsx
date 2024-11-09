@@ -6,6 +6,9 @@ import Ai from '../screens/Ai';
 import Header from '../components/Home/Header'; // Import the Header component
 import Colors from '../constants/Colors'; // Import the Colors object
 import { Platform } from 'react-native';
+import HomeStackScreen from './stackScreens/HomeStackScreen';
+import HomeIcon from '../components/Icons/HomeIcon';
+import AiIcon from '../components/Icons/AiIcon';
 
 const BottomTabNavigation = () => {
   const Tab = createBottomTabNavigator();
@@ -16,34 +19,46 @@ const BottomTabNavigation = () => {
         header: () => <Header screenName={route.name} />, // Use the custom Header component
         headerShown: true,
         tabBarIcon: ({ focused, color }) => {
-          color = focused ? Colors.ss.primary : Colors.ss.secondary;
+          color = focused ? Colors.ss.secondary : Colors.ss.primary;
           switch (route.name) {
-            // case 'Home':
-            //   return <HomeIcon color={color} />;
-            // case 'Ai':
-            //   return <AiIcon color={color} />;
+            case 'Home':
+              return <HomeIcon color={color} />;
+            case 'Ai':
+              return <AiIcon color={color} />;
             default:
               return null;
           }
         },
-        tabBarActiveTintColor: Colors.ss.primary,
-        tabBarInactiveTintColor: Colors.ss.secondary,
+        tabBarActiveTintColor: Colors.ss.secondary,
+        tabBarInactiveTintColor: Colors.ss.primary,
         tabBarHideOnKeyboard: Platform.OS === 'android' ? true : false,
         tabBarStyle: {
           backgroundColor: Colors.ss.lightBg,
           borderTopWidth: 1,
           borderColor: Colors.ss.middleBg,
-          height: 64,
+          height: 77,
           display: 'flex',
           justifyContent: 'space-around',
           alignItems: 'center',
           width: '100%',
         },
-        tabBarLabel: () => null,
+        // tabBarLabel: () => null,
       })}
     >
-      <Tab.Screen name="Home" component={Home} />
-      <Tab.Screen name="Ai" component={Ai} />
+      <Tab.Screen
+        name="Home"
+        component={HomeStackScreen}
+        options={{
+          tabBarLabel: 'Home',
+        }}
+      />
+      <Tab.Screen
+        name="Ai"
+        component={Ai}
+        options={{
+          tabBarLabel: 'Ai',
+        }}
+      />
     </Tab.Navigator>
   );
 };

@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import HomeHeadder from '../components/Home/HomeHeadder';
+import HomeWelcome from '../components/Home/HomeWelcome';
 import Coupons from '../components/Home/Coupons';
 import Events from '../components/Home/Events';
 import Booking from '../components/Home/Booking';
@@ -21,7 +21,7 @@ const Home = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <HomeHeadder colorr="blue" />
+      <HomeWelcome colorr="blue" />
       
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Coupons')}>
         <Text style={styles.sectionTitle}>Coupons</Text>

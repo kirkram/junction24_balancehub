@@ -1,7 +1,7 @@
 const Colors = {
   ss: {
-    primary: "rgba(0, 0, 175, 1)", // Blue with full opacity
-    secondary: "rgba(0, 255, 0, 1)", // Green with full opacity
+    primary: "rgba(0, 0, 200, 1)", // Blue
+    secondary: "rgba(255, 185, 0, 1)", // orange
     font: "rgba(255, 255, 255, 1)",
     fontBlack: "rgba(0, 0, 0, 1)",
     lightBg: "rgba(255, 255, 255, 1)", // White with full opacity
