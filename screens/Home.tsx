@@ -1,15 +1,22 @@
 import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { useNavigation } from '@react-navigation/native';
 import HomeHeadder from '../components/Home/HomeHeadder';
 import Coupons from '../components/Home/Coupons';
 import Events from '../components/Home/Events';
 import Booking from '../components/Home/Booking';
 
 const Home = () => {
+  const navigation = useNavigation<any>();
+
   const handlePress = (section: string) => {
-    console.log(`${section} clicked`);
-    // Add navigation or other logic here
+    if (section === 'Coupons') {
+      navigation.navigate('CouponsList');
+    } else {
+      console.log(`${section} clicked`);
+      // Add navigation or other logic here
+    }
   };
 
   return (

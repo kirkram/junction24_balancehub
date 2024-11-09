@@ -3,12 +3,13 @@ import { BottomTabParamList } from '../@types/navigation';
 import React from 'react';
 import Home from '../screens/Home';
 import Ai from '../screens/Ai';
+import HomeStackScreen from './stackScreens/HomeStackScreen';
 
 const BottomTabNavigation = () => {
     const Tab = createBottomTabNavigator<BottomTabParamList>();
   return (
     <Tab.Navigator>
-        <Tab.Screen name="Home" component={Home} />
+        <Tab.Screen name="Home" component={HomeStackScreen} />
         <Tab.Screen name="Ai" component={Ai} />
     </Tab.Navigator>
   )

@@ -11,5 +11,5 @@ export type BottomTabParamList = {
 
 export type HomeStackParamList = {
   MainHome: undefined;
-  SecondHome: undefined;
+  CouponsList: undefined;
 };
