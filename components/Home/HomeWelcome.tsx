@@ -14,8 +14,10 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
         start={[0, 1]}
         end={[1, 0]}
         style={styles.gradient}>
-        <Text style={styles.welcomeText}>Welcome</Text>
-        <Text style={styles.username}>{username}</Text>
+        <View style={styles.textContainer}>
+          <Text style={styles.welcomeText}>Welcome</Text>
+          <Text style={styles.username}>{username}</Text>
+        </View>
         {/* <Image source={{ uri: imageUrl }} style={styles.image} /> */}
       </LinearGradient>
     </ImageBackground>
@@ -38,22 +40,21 @@ const styles = StyleSheet.create({
     ...StyleSheet.absoluteFillObject,
     borderRadius: 10,
   },
-  welcomeText: {
-    fontSize: 14,
-    color: Colors.ss.font,
-    fontWeight: 'normal',
-    position: 'absolute',
-    top: 10,
-    left: 10,
-    marginTop: 75
-  },
-  username: {
-    fontSize: 32,
-    color: Colors.ss.font,
-    fontWeight: 'bold',
+  textContainer: {
     position: 'absolute',
     bottom: 10,
     left: 10,
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+  },
+  welcomeText: {
+    fontSize: 13,
+    color: 'white',
+  },
+  username: {
+    fontSize: 28,
+    color: 'white',
+    marginTop: 5, // Adjust this value to control the spacing between welcomeText and username
   },
   image: {
     width: 50,

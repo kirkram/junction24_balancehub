@@ -1,6 +1,6 @@
 const Colors = {
   ss: {
-    primary: "rgba(0, 0, 200, 1)", // Blue
+    primary: "rgba(0, 0, 140, 1)", // Blue
     secondary: "rgba(255, 185, 0, 1)", // orange
     font: "rgba(255, 255, 255, 1)",
     fontBlack: "rgba(0, 0, 0, 1)",
