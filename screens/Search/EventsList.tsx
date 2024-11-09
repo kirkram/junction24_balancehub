@@ -3,7 +3,7 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
-import events from '../../Aava_Events.ts'
+import events from '../../companies_filler/Companies_Events.ts'
 import { HomeStackParamList } from '../../@types/navigation.ts';
 
 const EventsList = () => {

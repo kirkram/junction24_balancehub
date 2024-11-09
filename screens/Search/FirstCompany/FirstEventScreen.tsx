@@ -2,7 +2,7 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import events from '../../companies_filler/Companies_Events.ts';
+import events from '../../../companies_filler/Companies_Events.ts';
 
 type RouteParams = {
     eventId: string;

@@ -2,11 +2,11 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import Colors from '../../constants/Colors';
-import HomeWelcome from '../../components/Search/HomeWelcome';
-import Coupons from '../../components/Search/Coupons';
-import Events from '../../components/Search/Events';
-import Booking from '../../components/Search/Booking';
+import Colors from '../../../constants/Colors';
+import HomeWelcome from '../../../components/Search/HomeWelcome';
+import Coupons from '../../../components/Search/Coupons';
+import Events from '../../../components/Search/Events';
+import Booking from '../../../components/Search/Booking';
 
 const Search = () => {
   const navigation = useNavigation<any>();
@@ -18,10 +18,8 @@ const Search = () => {
       navigation.navigate('EventsList');
     } else if (section === 'Bookings') {
       navigation.navigate('BookingsList');
-    } else if (section === 'Sustainability') {
-      navigation.navigate('SustainabilityScreen');
-    } else if (section === 'Contact Us') {
-      navigation.navigate('ContactUsScreen');
+    } else if (section === 'Like' || section === 'Dislike') {
+      navigation.navigate('FirstCompany');
     } else {
       console.log(`${section} clicked`);
     }
@@ -56,13 +54,12 @@ const Search = () => {
       </View>
 
       <View style={styles.likeDislikeContainer}>
-      <TouchableOpacity style={styles.dislikeButton} onPress={() => console.log('Disliked')}>
+      <TouchableOpacity style={styles.dislikeButton} onPress={() => handlePress('Like')}>
           <Icon name="thumbs-down" size={40} color="rgba(150, 161, 147, 0.8)" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.likeButton} onPress={() => console.log('Liked')}>
+        <TouchableOpacity style={styles.likeButton} onPress={() => handlePress('Dislike')}>
           <Icon name="thumbs-up" size={40} color="rgba(150, 161, 147, 0.8)" />
         </TouchableOpacity>
-        
       </View>
       
     </ScrollView>

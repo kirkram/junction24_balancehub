@@ -3,15 +3,15 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
-import coupons from '../../companies_filler/Companies_Coupons.ts'
-import { HomeStackParamList } from '../../@types/navigation.ts';
+import events from '../../../companies_filler/Companies_Events.ts'
+import { HomeStackParamList } from '../../../@types/navigation.ts';
 
-const CouponsList = () => {
+const EventsList = () => {
   const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
 
-  const handleCouponPress = (coupon: { id: string; file: string; name: string; applicationName: string }) => {
-    console.log('Coupon clicked:', coupon);
-    navigation.navigate('CouponScreen', { couponId : coupon.id });
+  const handleEventPress = (event: { id: string; image: string; title: string; location: string }) => {
+    console.log('Event clicked:', event);
+    navigation.navigate('EventScreen', { eventId: event.id });
   };
 
   return (
@@ -20,10 +20,10 @@ const CouponsList = () => {
         <Icon name="chevron-back" size={20} color="black" />
       </TouchableOpacity>
       <ScrollView showsVerticalScrollIndicator={false}>
-        {coupons.map(coupon => (
-          <TouchableOpacity key={coupon.id} onPress={() => handleCouponPress(coupon)}>
-            <View style={styles.couponContainer}>
-              <Image source={{ uri: coupon.file }} style={styles.image} />
+        {events.map(event => (
+          <TouchableOpacity key={event.id} onPress={() => handleEventPress(event)}>
+            <View style={styles.eventContainer}>
+              <Image source={{ uri: event.image }} style={styles.image} />
                 <LinearGradient
                 colors={['rgba(145, 171, 147, 0.6)', 'rgba(132, 160, 147, 0.3)', 'transparent']}
                 start={[0, 1]}
@@ -31,8 +31,8 @@ const CouponsList = () => {
                 style={styles.gradient}
                 >
                 <View style={styles.textContainer}>
-                  <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail"> {coupon.name} </Text>
-                  <Text style={styles.issueText}> {coupon.applicationName} </Text>
+                  <Text style={styles.title} numberOfLines={1} ellipsizeMode="tail"> {event.title} </Text>
+                  <Text style={styles.locationText}> {event.location} </Text>
                 </View>
                 </LinearGradient>
             </View>
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 16,
   },
-  couponContainer: {
+  eventContainer: {
     marginVertical: 5,
     width: '100%',
     position: 'relative',
@@ -85,10 +85,10 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 20,
   },
-  issueText: {
+  locationText: {
     color: 'white',
     fontSize: 14,
   },
 });
 
-export default CouponsList
+export default EventsList
