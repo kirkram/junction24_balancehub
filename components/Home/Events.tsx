@@ -15,7 +15,7 @@ const Events = () => {
   };
 
   return (
-    <ScrollView horizontal>
+    <ScrollView horizontal alwaysBounceVertical showsHorizontalScrollIndicator={false} >
       {events.map(event => (
         <TouchableOpacity key={event.id} onPress={() => handleEventPress(event)}>
           <View style={styles.eventContainer}>
@@ -34,7 +34,10 @@ const Events = () => {
 
 const styles = StyleSheet.create({
   eventContainer: {
-    marginRight: 10,
+    marginRight: 5,
+    marginLeft: 5,
+    marginTop: 5,
+    marginBottom: 5,
     width: 175, // Smaller width
     position: 'relative',
   },
