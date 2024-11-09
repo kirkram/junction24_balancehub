@@ -1,27 +1,40 @@
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import React from 'react';
+import Icon from 'react-native-vector-icons/Ionicons';
 import HomeHeadder from '../components/Home/HomeHeadder';
 import Coupons from '../components/Home/Coupons';
 import Events from '../components/Home/Events';
 import Booking from '../components/Home/Booking';
 
 const Home = () => {
+  const handlePress = (section: string) => {
+    console.log(`${section} clicked`);
+    // Add navigation or other logic here
+  };
+
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.headerText}>Home</Text>
       <HomeHeadder colorr="blue" />
-      
-      <Text style={styles.sectionTitle}>Coupons</Text>
+      <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Coupons')}>
+        <Text style={styles.sectionTitle}>Coupons</Text>
+        <Icon name="chevron-forward" size={20} color="black" />
+      </TouchableOpacity>
       <View style={styles.sectionContainer}>
         <Coupons />
       </View>
       
-      <Text style={styles.sectionTitle}>Events</Text>
+      <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Events')}>
+        <Text style={styles.sectionTitle}>Events</Text>
+        <Icon name="chevron-forward" size={20} color="black" />
+      </TouchableOpacity>
       <View style={styles.sectionContainer}>
         <Events />
       </View>
       
-      <Text style={styles.sectionTitle}>Booking</Text>
+      <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Booking')}>
+        <Text style={styles.sectionTitle}>Booking</Text>
+        <Icon name="chevron-forward" size={20} color="black" />
+      </TouchableOpacity>
       <View style={styles.sectionContainer}>
         <Booking />
       </View>
@@ -41,10 +54,17 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     padding: 20,
   },
+  sectionHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: 3,
+    paddingBottom: 5,
+    paddingTop: 15,
+  },
   sectionTitle: {
     fontSize: 24,
     fontWeight: "bold",
-    marginVertical: 3,
   },
   sectionContainer: {
     marginBottom: 20, // Add margin to the bottom of each section
