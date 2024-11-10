@@ -20,6 +20,7 @@ export type HomeStackParamList = {
   BookingScreen: { bookingId: string };
   SustainabilityScreen: undefined;
   ContactUsScreen: undefined;
+  ProfileScreen: undefined;
 };
 
 export type SearchStackParamList = {

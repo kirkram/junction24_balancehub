@@ -3,10 +3,14 @@ import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Colors from '../../constants/Colors';
 import UserIcon from '../Icons/UserIcon';
 import SearchIcon from '../Icons/SearchIcon';
+import HomeStackScreen from '../../navigation/stackScreens/HomeStackScreen';
+
+import { useNavigation } from '@react-navigation/native';
 
 const Header = ({ screenName }: { screenName: string }) => {
+  const navigation = useNavigation<any>();
   const handleUserIconPress = () => {
-    console.log('User icon pressed');
+    navigation.navigate('ProfileScreen');
   };
 
   const handleSearchIconPress = () => {

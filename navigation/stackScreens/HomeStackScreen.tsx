@@ -10,6 +10,8 @@ import BookingsList from '../../screens/Home/BookingsList';
 import BookingScreen from '../../screens/Home/BookingScreen';
 import SustainabilityScreen from '../../screens/Home/SustainabilityScreen';
 import ContactUsScreen from '../../screens/Home/ContactUsScreen';
+import ProfileScreen from '../../screens/Profile/ProfileScreen';
+
 
 
 const HomeStackScreen = () => {
@@ -25,6 +27,7 @@ const HomeStackScreen = () => {
         <HomeStack.Screen name="BookingScreen" component={BookingScreen} options={{ headerShown: false }} />
         <HomeStack.Screen name="SustainabilityScreen" component={SustainabilityScreen} options={{ headerShown: false }} />
         <HomeStack.Screen name="ContactUsScreen" component={ContactUsScreen} options={{ headerShown: false }} />
+        <HomeStack.Screen name="ProfileScreen" component={ProfileScreen} options={{ headerShown: false }} />
     </HomeStack.Navigator>
   )
 }

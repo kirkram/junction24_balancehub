@@ -5,9 +5,8 @@ import Colors from '../../constants/Colors.ts';
 const HomeWelcome = ({ colorr }: { colorr: string }) => {
    const imageUrl3 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/NhJnu4dzLtIECk2pLsZO4gmbavGKvbAt/GMEF1eteUjgUj_ciKSjdUShER99jTleL/oltXTSQ4krvlfCLio11ZmVg6B50KM80Y/FY2RqxZbo-o.png";
   
-
   return (
-    <ImageBackground source={{ uri: backgroundImageUrl }} style={[styles.header, { backgroundColor: colorr }]}>
+    <ImageBackground source={{ uri: imageUrl3 }} style={[styles.header, { backgroundColor: colorr }]}>
       <LinearGradient
         colors={[Colors.ss.gradient1, Colors.ss.gradient2, 'transparent']}
         start={[0, 1]}
@@ -36,12 +35,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   image3: {
-    width: 100%,
-    height: 100%,
-    borderRadius: 25,
-    position: 'absolute',
-    top: 0,
-    right: 0,
+    // width: 100%,
+    // height: 100%,
+    // borderRadius: 25,
+    // position: 'absolute',
+    top: 600,
+    // right: 200,
   },
 });
 
