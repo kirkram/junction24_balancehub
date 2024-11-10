@@ -31,10 +31,10 @@ const Search = () => {
       
       <View style={styles.likeDislikeContainer}>
       <TouchableOpacity style={styles.dislikeButton} onPress={() => handlePress('Like')}>
-          <Icon name="thumbs-down" size={40} color="rgba(150, 161, 147, 0.8)" />
+          <Icon name="thumbs-down" size={40} color={Colors.ss.dislikeColor} />
         </TouchableOpacity>
         <TouchableOpacity style={styles.likeButton} onPress={() => handlePress('Dislike')}>
-          <Icon name="thumbs-up" size={40} color="rgba(150, 161, 147, 0.8)" />
+          <Icon name="thumbs-up" size={40} color={Colors.ss.primary} />
         </TouchableOpacity>
       </View>
       

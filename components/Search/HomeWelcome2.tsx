@@ -9,7 +9,7 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
   const username4 = "Our App well-being rating 3.9/5";
   const username3 = "Summary 4/5";
   const username5 = "Most relevant  tags";
-  const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/XdRdpp79_2XbKelWS-zhc3y-oK3cKTB5/gR_5zmjCUgQIrcJgAA0J-j-zP-qm4TlN/0EuukTlUNA2ZJKWc805IWYyfjjtfDHXR/4uO3pHMJpgE.jpg"; // background image link
+  const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/fajgFYnlYHU8HDcmxnsfyhZcYopLgZV4/-GMYIG7gJXH7oghWCwTODUO4AjUyqltv/g8UbHMYZWMCr344wCq19kcYmlBHUX8JP/j1g-fyZheZs.png"; // background image link
   const imageUrl1 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/2tlSoSr0l-nBi5-_h6MsbNSzTmbAXbAo/xNDQm0l242UGsFBTcIUaYOioyCO0PPfN/pFppKf21sq8DrNbt0OZz-udUf_nxs8Ei/AeqhelukQvk.png";
   const imageUrl2 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/z4ra9avuCbZyB5qPvxuG_w7x-0Aus2Xp/2rq8eDBNB7094TWrUWm5E5abH1IIiEDy/yL0hLaSO9jXGU7imRHWfZOjLrUmyHd40/qNwIYUSQRsM.png";
   const imageUrl3 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/gIPYDREcvws-J8ylN-gOQann0SHYmF7g/w2crzgCqEowIotVvU4N1fuI7BlltGILt/_gX513We6eGI3hfISN0dx0BqRda51zyX/pJKfKik97cM.png";

@@ -2,6 +2,7 @@ const Colors = {
   ss: {
     primary: "rgba(94, 141, 131, 1)", // light green
     secondary: "rgba(7, 27, 22, 1)", // dark green
+    dislikeColor: "rgba(219, 81, 7, 1)", // soft red
     bookingBottom: "rgba(94, 141, 131, 0.7)", // same as primary but with 70% opacity
     font: "rgba(255, 255, 255, 1)",
     fontBlack: "rgba(0, 0, 0, 1)",
