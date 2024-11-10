@@ -3,16 +3,16 @@ import { LinearGradient } from 'expo-linear-gradient';
 import Colors from '../../constants/Colors.ts';
 
 const HomeWelcome = ({ colorr }: { colorr: string }) => {
-  const username = "GlassDoor 4.8/5"; 
-  const username1 = "Facebook 4.7/5";
-  const username2 = "Google review 4.8/5";
-  const username4 = "Our App well-being rating 4.6/5";
-  const username3 = "Summary 4.7/5";
+  const username = "GlassDoor 4.3/5"; 
+  const username1 = "Facebook 4.2/5";
+  const username2 = "Google review 4.1/5";
+  const username4 = "Our App well-being rating 3.9/5";
+  const username3 = "Summary 4/5";
   const username5 = "Most relevant  tags";
-  const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/27pCoPE68IZI_yMKhda0fA9IIKvcxQO1/PjnLAfNETZCGUUO4hq08Htq8M3FJ53RH/eC4vmYzv_b946M_LHRUK-Isxo1DSYatv/gOrTG9XoK9RedWIGatJo02JztzFe_smY.jpg"; // background image link
-  const imageUrl1 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/DB2YG6lT7aRiVpLDKu-bXuNiMMGaqGfw/D_5Zob4SSiu0G0W5V9c6ObIFYbaA7g7v/xrXyvyWQFagY7CJuRcdRu6xI6bJVVl2s/DU4lbE1-iMo.png";
+  const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/XdRdpp79_2XbKelWS-zhc3y-oK3cKTB5/gR_5zmjCUgQIrcJgAA0J-j-zP-qm4TlN/0EuukTlUNA2ZJKWc805IWYyfjjtfDHXR/4uO3pHMJpgE.jpg"; // background image link
+  const imageUrl1 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/2tlSoSr0l-nBi5-_h6MsbNSzTmbAXbAo/xNDQm0l242UGsFBTcIUaYOioyCO0PPfN/pFppKf21sq8DrNbt0OZz-udUf_nxs8Ei/AeqhelukQvk.png";
   const imageUrl2 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/z4ra9avuCbZyB5qPvxuG_w7x-0Aus2Xp/2rq8eDBNB7094TWrUWm5E5abH1IIiEDy/yL0hLaSO9jXGU7imRHWfZOjLrUmyHd40/qNwIYUSQRsM.png";
-  const imageUrl3 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/0DFWebBiLnuaZUORArAECJAR0xDQ0ZKd/8cmexTXF7ZnNWybBtuvIeW-QnG4sd4hx/_tUqyNa8Y2PxH3Wh_lbdv_3cS6TBvgJ_/SuxKooQXLv8.png";
+  const imageUrl3 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/gIPYDREcvws-J8ylN-gOQann0SHYmF7g/w2crzgCqEowIotVvU4N1fuI7BlltGILt/_gX513We6eGI3hfISN0dx0BqRda51zyX/pJKfKik97cM.png";
   
 
   return (
@@ -103,7 +103,7 @@ const styles = StyleSheet.create({
     left: 170,
     width: 200,
     flexWrap: 'wrap',
-    backgroundColor: 'rgba(0, 90, 0, 0.2)',
+    backgroundColor: 'rgba(0, 100, 0, 0.2)',
   },
   username5: {
     fontSize: 8,
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
   },
   
   image1: {
-    width: 90,
+    width: 100,
     height: 22,
     borderRadius: 20,
     position: 'absolute',
@@ -131,12 +131,12 @@ const styles = StyleSheet.create({
     right: 155,
   },
   image3: {
-    width: 106,
-    height: 25,
+    width: 110,
+    height: 26,
     borderRadius: 25,
     position: 'absolute',
     top: 230,
-    right: 40,
+    right: 34,
   },
 });
 

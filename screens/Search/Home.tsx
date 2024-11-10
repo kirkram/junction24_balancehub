@@ -2,24 +2,26 @@ import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-nati
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
-import Colors from '../../../constants/Colors';
-import HomeWelcome  from '../../../components/Search/HomeWelcome2';
-import Coupons      from '../../../components/Search/Coupons3';
-import Events       from '../../../components/Search/Events3';
-import Booking      from '../../../components/Search/Booking3';
+import Colors from '../../constants/Colors';
+import HomeWelcome from '../../components/Search/HomeWelcome1';
+import Coupons from '../../components/Search/Coupons';
+import Events from '../../components/Search/Events';
+import Booking from '../../components/Search/Booking';
 
 const Search = () => {
   const navigation = useNavigation<any>();
 
   const handlePress = (section: string) => {
     if (section === 'Coupons') {
-      navigation.navigate('ThirdCouponsList');
+      navigation.navigate('CouponsList');
     } else if (section === 'Events') {
-      navigation.navigate('ThirdEventsList');
+      navigation.navigate('EventsList');
     } else if (section === 'Bookings') {
-      navigation.navigate('ThirdBookingsList');
-    } else if (section === 'Like' || section === 'Dislike') {
-      navigation.navigate('FirstCompany');
+      navigation.navigate('BookingsList');
+    } else if (section === 'Sustainability') {
+      navigation.navigate('SustainabilityScreen');
+    } else if (section === 'Contact Us') {
+      navigation.navigate('ContactUsScreen');
     } else {
       console.log(`${section} clicked`);
     }
@@ -28,16 +30,7 @@ const Search = () => {
   return (
     <ScrollView style={styles.container}>
       <HomeWelcome colorr="blue" />
-
-      <View style={styles.likeDislikeContainer}>
-        <TouchableOpacity style={styles.dislikeButton} onPress={() => handlePress('Like')}>
-          <Icon name="thumbs-down" size={40} color="rgba(150, 161, 147, 0.8)" />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.likeButton} onPress={() => handlePress('Dislike')}>
-          <Icon name="thumbs-up" size={40} color="rgba(150, 161, 147, 0.8)" />
-        </TouchableOpacity>
-      </View>
-
+      
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Coupons')}>
         <Text style={styles.sectionTitle}>Coupons</Text>
         <Icon name="chevron-forward" size={20} color="black" />
@@ -45,7 +38,7 @@ const Search = () => {
       <View style={styles.sectionContainer}>
         <Coupons />
       </View>
-
+      
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Events')}>
         <Text style={styles.sectionTitle}>Events</Text>
         <Icon name="chevron-forward" size={20} color="black" />
@@ -53,7 +46,7 @@ const Search = () => {
       <View style={styles.sectionContainer}>
         <Events />
       </View>
-
+      
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Bookings')}>
         <Text style={styles.sectionTitle}>Booking</Text>
         <Icon name="chevron-forward" size={20} color="black" />
@@ -62,6 +55,16 @@ const Search = () => {
         <Booking />
       </View>
 
+      <View style={styles.likeDislikeContainer}>
+      <TouchableOpacity style={styles.dislikeButton} onPress={() => console.log('Disliked')}>
+          <Icon name="thumbs-down" size={40} color="rgba(150, 161, 147, 0.8)" />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.likeButton} onPress={() => console.log('Liked')}>
+          <Icon name="thumbs-up" size={40} color="rgba(150, 161, 147, 0.8)" />
+        </TouchableOpacity>
+        
+      </View>
+      
     </ScrollView>
   );
 };
@@ -90,7 +93,7 @@ const styles = StyleSheet.create({
   },
   sectionContainer: {
     marginTop: 3,
-    marginBottom: 7,
+    marginBottom: 7, 
   },
   infoContainer: {
     marginTop: 20,
@@ -102,8 +105,8 @@ const styles = StyleSheet.create({
   likeDislikeContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 30,
-    marginBottom: 20,
+    marginTop: 20,
+    marginBottom: 40,
   },
   likeButton: {
     flexDirection: 'row',

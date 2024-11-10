@@ -3,8 +3,8 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import Colors from '../../../constants/Colors';
-import HomeWelcome  from '../../../components/Search/HomeWelcome';
-import Coupons      from '../../../components/Search/Coupons';
+import HomeWelcome  from '../../../components/Search/HomeWelcome1';
+import Coupons      from '../../../components/Search/Coupons2';
 import Events       from '../../../components/Search/Events2';
 import Booking      from '../../../components/Search/Booking2';
 
