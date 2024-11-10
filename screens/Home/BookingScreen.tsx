@@ -3,6 +3,7 @@ import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import bookings from '../../companies_filler/Companies_Booking.ts';
+import Colors from '../../constants/Colors.ts';
 
 type RouteParams = {
     bookingId: string;
