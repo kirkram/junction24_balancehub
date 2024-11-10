@@ -1,16 +1,3 @@
- To create a README with a focus on the "How to Use" section for the balance_hub repository, here are the steps I'll include:
-
-1. Introduction
-2. Technologies Used
-3. Prerequisites
-4. Installation
-5. Running the Project
-6. Additional Information
-
-Here is a draft for the README:
-
----
-
 # Balance Hub
 
 ## Introduction
