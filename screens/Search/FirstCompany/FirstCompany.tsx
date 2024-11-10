@@ -3,21 +3,21 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { useNavigation } from '@react-navigation/native';
 import Colors from '../../../constants/Colors';
-import HomeWelcome from '../../../components/Search/HomeWelcome';
-import Coupons from '../../../components/Search/Coupons';
-import Events from '../../../components/Search/Events';
-import Booking from '../../../components/Search/Booking';
+import HomeWelcome  from '../../../components/Search/HomeWelcome';
+import Coupons      from '../../../components/Search/Coupons';
+import Events       from '../../../components/Search/Events';
+import Booking      from '../../../components/Search/Booking';
 
 const Search = () => {
   const navigation = useNavigation<any>();
 
   const handlePress = (section: string) => {
     if (section === 'Coupons') {
-      navigation.navigate('CouponsList');
+      navigation.navigate('FirstCouponsList');
     } else if (section === 'Events') {
-      navigation.navigate('EventsList');
+      navigation.navigate('FirstEventsList');
     } else if (section === 'Bookings') {
-      navigation.navigate('BookingsList');
+      navigation.navigate('FirstBookingsList');
     } else if (section === 'Like' || section === 'Dislike') {
       navigation.navigate('SecondCompany');
     } else {

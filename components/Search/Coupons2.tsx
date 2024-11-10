@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { useNavigation, NavigationProp } from '@react-navigation/native';
-import coupons from '../../companies_filler/Company1_Coupons.ts';
+import coupons from '../../companies_filler/Company2_Coupons.ts';
 import { SearchStackParamList } from '../../@types/navigation.ts';
 import Colors from '../../constants/Colors'; // Import the Colors object
 
@@ -10,7 +10,7 @@ const Coupons = () => {
   
   const handleCouponPress = (coupon: { id: string; file: string; name: string; applicationFile: string; applicationName: string; }) => {
     console.log('Coupon clicked:', coupon);
-    navigation.navigate('FirstCouponScreen', { couponId : coupon.id });
+    navigation.navigate('SecondCouponScreen', { couponId : coupon.id });
   };
 
   return (
