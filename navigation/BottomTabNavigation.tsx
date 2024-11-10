@@ -24,9 +24,9 @@ const BottomTabNavigation = () => {
         tabBarIcon: ({ focused, color }) => {
           color = focused ? Colors.ss.secondary : Colors.ss.primary;
           switch (route.name) {
-            case 'Home':
+            case 'HOME':
               return <HomeIcon color={color} />;
-            case 'Rating':
+            case 'RATING':
               return <RatingIcon color={color} />;
             // case 'Survey':
             //   return <SurveyIcon color={color} />;
@@ -41,7 +41,7 @@ const BottomTabNavigation = () => {
           backgroundColor: Colors.ss.lightBg,
           borderTopWidth: 1,
           borderColor: Colors.ss.middleBg,
-          height: 77,
+          height: 80,
           display: 'flex',
           justifyContent: 'space-around',
           alignItems: 'center',
@@ -51,17 +51,17 @@ const BottomTabNavigation = () => {
       })}
     >
       <Tab.Screen
-        name="Home"
+        name="HOME"
         component={HomeStackScreen}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'HOME',
         }}
       />
       <Tab.Screen
-        name="Rating"
+        name="RATING"
         component={SearchStackScreen}
         options={{
-          tabBarLabel: 'Rating',
+          tabBarLabel: 'RATING',
         }}
       />
       {/* <Tab.Screen

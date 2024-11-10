@@ -40,8 +40,10 @@ const styles = StyleSheet.create({
     position: 'relative',
   },
   headerText: {
-    fontSize: 35,
+    fontSize: 40,
     color: Colors.ss.font,
+    paddingTop: 3,
+    // fontWeight: 'bold',
   },
   userIconContainer: {
     position: 'absolute',
