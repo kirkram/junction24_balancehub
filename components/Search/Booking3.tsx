@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
-import booking from '../../companies_filler/Company1_Booking.ts';
+import booking from '../../companies_filler/Company3_Booking.ts';
 import Colors from '../../constants/Colors.ts';
 import { NavigationProp, useNavigation } from '@react-navigation/native'
 import { SearchStackParamList } from '../../@types/navigation.ts';
@@ -9,7 +9,7 @@ const Booking = () => {
   const navigation = useNavigation<NavigationProp<SearchStackParamList>>();
 
   const handleBookingPress = (booking: { id: string; image: string; title: string; description: string}) => {
-    navigation.navigate('FirstBookingScreen', { bookingId: booking.id });
+    navigation.navigate('ThirdBookingScreen', { bookingId: booking.id });
     console.log('Booking clicked:', booking);
   };
 
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 10,
   },
   textContainer: {
-    backgroundColor: Colors.ss.bookingBottom,
+    backgroundColor: Colors.ss.darkBg,
     padding: 10,
     borderBottomLeftRadius: 10,
     borderBottomRightRadius: 10,

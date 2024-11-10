@@ -3,20 +3,20 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
-import events from '../../../companies_filler/Companies_Events.ts'
-import { HomeStackParamList } from '../../../@types/navigation.ts';
+import events from '../../../companies_filler/Company3_Events.ts'
+import { SearchStackParamList } from '../../../@types/navigation.ts';
 
 const EventsList = () => {
-  const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
+  const navigation = useNavigation<NavigationProp<SearchStackParamList>>();
 
   const handleEventPress = (event: { id: string; image: string; title: string; location: string }) => {
     console.log('Event clicked:', event);
-    navigation.navigate('EventScreen', { eventId: event.id });
+    navigation.navigate('ThirdEventScreen', { eventId: event.id });
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('MainHome' as never)} style={styles.backButton}>
+      <TouchableOpacity onPress={() => navigation.navigate('ThirdCompany' as never)} style={styles.backButton}>
         <Icon name="chevron-back" size={20} color="black" />
       </TouchableOpacity>
       <ScrollView showsVerticalScrollIndicator={false}>

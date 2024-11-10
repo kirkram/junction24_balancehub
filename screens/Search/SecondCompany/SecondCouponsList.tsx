@@ -3,20 +3,20 @@ import { NavigationProp, useNavigation } from '@react-navigation/native'
 import React from 'react'
 import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
-import coupons from '../../../companies_filler/Companies_Coupons.ts'
-import { HomeStackParamList } from '../../../@types/navigation.ts';
+import coupons from '../../../companies_filler/Company2_Coupons.ts'
+import { SearchStackParamList } from '../../../@types/navigation.ts';
 
 const CouponsList = () => {
-  const navigation = useNavigation<NavigationProp<HomeStackParamList>>();
+  const navigation = useNavigation<NavigationProp<SearchStackParamList>>();
 
   const handleCouponPress = (coupon: { id: string; file: string; name: string; applicationName: string }) => {
     console.log('Coupon clicked:', coupon);
-    navigation.navigate('CouponScreen', { couponId : coupon.id });
+    navigation.navigate('SecondCouponScreen', { couponId : coupon.id });
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('MainHome' as never)} style={styles.backButton}>
+      <TouchableOpacity onPress={() => navigation.navigate('SecondCompany' as never)} style={styles.backButton}>
         <Icon name="chevron-back" size={20} color="black" />
       </TouchableOpacity>
       <ScrollView showsVerticalScrollIndicator={false}>

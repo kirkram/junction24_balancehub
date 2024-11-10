@@ -2,7 +2,7 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import coupons from '../../../companies_filler/Companies_Coupons.ts';
+import coupons from '../../../companies_filler/Company1_Coupons.ts';
 
 type RouteParams = {
     couponId: string;

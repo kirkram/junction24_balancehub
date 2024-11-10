@@ -2,7 +2,7 @@ import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'rea
 import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-import bookings from '../../../companies_filler/Companies_Booking.ts';
+import bookings from '../../../companies_filler/Company1_Booking.ts';
 
 type RouteParams = {
     bookingId: string;

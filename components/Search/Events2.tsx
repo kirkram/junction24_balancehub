@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import events from '../../companies_filler/Company1_Events.ts';
+import events from '../../companies_filler/Company2_Events.ts';
 import Colors from '../../constants/Colors.ts';
 import { NavigationProp, useNavigation } from '@react-navigation/native'
 import { SearchStackParamList } from '../../@types/navigation.ts';
@@ -11,7 +11,7 @@ const Events = () => {
 
   const handleEventPress = (event: { id: string; image: string; title: string; location: string }) => {
     console.log('Event clicked:', event);
-    navigation.navigate('FirstEventScreen', { eventId: event.id });
+    navigation.navigate('SecondEventScreen', { eventId: event.id });
   };
 
   const formatDate = (dateString: string) => {
