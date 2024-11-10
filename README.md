@@ -18,14 +18,16 @@ Follow these steps to set up the project locally:
 1. Clone the repository:
        git clone https://github.com/MeM0ri/balance_hub.git
     cd balance_hub
-    2. Install dependencies:
+    
+2. Install dependencies:
        npm install
     
 ## Running the Project
 To run the project, follow these steps:
 1. Start the Expo server:
        expo start
-    2. Run on your device or emulator:
+
+2. Run on your device or emulator:
     - Using Expo Go:
         - Install the Expo Go app on your device from the [App Store](https://apps.apple.com/us/app/expo-go/id982107779) or [Google Play](https://play.google.com/store/apps/details?id=host.exp.exponent&hl=en&gl=US).
         - Scan the QR code generated in the terminal using the Expo Go app to run the application on your device.
