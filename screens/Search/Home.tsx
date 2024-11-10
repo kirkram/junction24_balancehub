@@ -29,7 +29,7 @@ const Search = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <HomeWelcome colorr="blue" />
+      <HomeWelcome colorr="darkcyan" />
       
       <TouchableOpacity style={styles.sectionHeader} onPress={() => handlePress('Coupons')}>
         <Text style={styles.sectionTitle}>Coupons</Text>
