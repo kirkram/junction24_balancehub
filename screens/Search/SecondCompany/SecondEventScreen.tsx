@@ -3,6 +3,7 @@ import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import events from '../../../companies_filler/Company2_Events.ts';
+import Colors from '../../../constants/Colors.ts';
 
 type RouteParams = {
     eventId: string;
@@ -107,7 +108,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
     },
     registerButton: {
-        backgroundColor: '#007bff',
+        backgroundColor: Colors.ss.primary,
         paddingVertical: 12,
         paddingHorizontal: 32,
         borderRadius: 7,

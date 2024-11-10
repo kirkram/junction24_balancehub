@@ -6,9 +6,9 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
   const username = "GlassDoor 4.8/5"; 
   const username1 = "Facebook 4.7/5";
   const username2 = "Google review 4.8/5";
-  const username4 = "Our App well-being rating 4.6/5";
-  const username3 = "Summary 4.7/5";
-  const username5 = "Most relevant  tags";
+  const username4 = "Well-being rating: 4.6/5";
+  const username3 = "Indeed 4.7/5";
+  const username5 = "Most relevant tags";
   const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/27pCoPE68IZI_yMKhda0fA9IIKvcxQO1/PjnLAfNETZCGUUO4hq08Htq8M3FJ53RH/eC4vmYzv_b946M_LHRUK-Isxo1DSYatv/gOrTG9XoK9RedWIGatJo02JztzFe_smY.jpg"; // background image link
   const imageUrl1 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/DB2YG6lT7aRiVpLDKu-bXuNiMMGaqGfw/D_5Zob4SSiu0G0W5V9c6ObIFYbaA7g7v/xrXyvyWQFagY7CJuRcdRu6xI6bJVVl2s/DU4lbE1-iMo.png";
   const imageUrl2 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/z4ra9avuCbZyB5qPvxuG_w7x-0Aus2Xp/2rq8eDBNB7094TWrUWm5E5abH1IIiEDy/yL0hLaSO9jXGU7imRHWfZOjLrUmyHd40/qNwIYUSQRsM.png";
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 70, // Adjusted position
+    top: 75, // Adjusted position
     left: 10,
   },
   username1: {
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 110, // Adjusted position
+    top: 105, // Adjusted position
     left: 10,
   },
   username2: {
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 150, // Adjusted position
+    top: 135, // Adjusted position
     left: 10,
   },
   username3: {
@@ -91,35 +91,35 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 190, // Adjusted position
+    top: 165, // Adjusted position
     left: 10,
   },
   username4: {
-    fontSize: 15,
+    fontSize: 20,
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 120, // Adjusted position
-    left: 170,
+    top: 100, // Adjusted position
+    left: 190,
     width: 200,
     flexWrap: 'wrap',
-    backgroundColor: 'rgba(0, 90, 0, 0.2)',
+    backgroundColor: 'rgba(0, 90, 0, 0.3)',
   },
   username5: {
     fontSize: 8,
     color: Colors.ss.font,
     position: 'absolute',
     top: 210, // Adjusted position
-    left: 130,
+    left: 155,
     opacity: 0.6,
   },
   
   image1: {
-    width: 90,
+    width: 98,
     height: 22,
     borderRadius: 20,
     position: 'absolute',
-    top: 230,
+    top: 232,
     right: 255,
   },
   image2: {

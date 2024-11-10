@@ -6,9 +6,9 @@ const HomeWelcome = ({ colorr }: { colorr: string }) => {
   const username = "GlassDoor 4.5/5"; 
   const username1 = "Facebook 4.4/5";
   const username2 = "Google review 4.5/5";
-  const username4 = "Our App well-being rating 4.5/5";
-  const username3 = "Summary 4.5/5";
-  const username5 = "Most relevant  tags";
+  const username4 = "Well-being rating: 4.5/5";
+  const username3 = "Indeed 4.5/5";
+  const username5 = "Most relevant tags";
   const backgroundImageUrl = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/XdRdpp79_2XbKelWS-zhc3y-oK3cKTB5/gR_5zmjCUgQIrcJgAA0J-j-zP-qm4TlN/0EuukTlUNA2ZJKWc805IWYyfjjtfDHXR/4uO3pHMJpgE.jpg"; // background image link
   const imageUrl1 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/2tlSoSr0l-nBi5-_h6MsbNSzTmbAXbAo/xNDQm0l242UGsFBTcIUaYOioyCO0PPfN/pFppKf21sq8DrNbt0OZz-udUf_nxs8Ei/AeqhelukQvk.png";
   const imageUrl2 = "https://static.wfolio.com/file/AqiFFw_TXMM4LDwoI2TPSYAM1lHVLAGB/F3eUE25SDaC3OUQ9TuvC-m2zOPPnCGNt/z4ra9avuCbZyB5qPvxuG_w7x-0Aus2Xp/2rq8eDBNB7094TWrUWm5E5abH1IIiEDy/yL0hLaSO9jXGU7imRHWfZOjLrUmyHd40/qNwIYUSQRsM.png";
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 70, // Adjusted position
+    top: 75, // Adjusted position
     left: 10,
   },
   username1: {
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 110, // Adjusted position
+    top: 105, // Adjusted position
     left: 10,
   },
   username2: {
@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 150, // Adjusted position
+    top: 135, // Adjusted position
     left: 10,
   },
   username3: {
@@ -91,35 +91,35 @@ const styles = StyleSheet.create({
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 190, // Adjusted position
+    top: 165, // Adjusted position
     left: 10,
   },
   username4: {
-    fontSize: 15,
+    fontSize: 20,
     color: Colors.ss.font,
     fontWeight: 'bold',
     position: 'absolute',
-    top: 120, // Adjusted position
-    left: 170,
+    top: 100, // Adjusted position
+    left: 190,
     width: 200,
     flexWrap: 'wrap',
-    backgroundColor: 'rgba(0, 100, 0, 0.2)',
+    backgroundColor: 'rgba(0, 90, 0, 0.3)',
   },
   username5: {
     fontSize: 8,
     color: Colors.ss.font,
     position: 'absolute',
     top: 210, // Adjusted position
-    left: 130,
+    left: 155,
     opacity: 0.6,
   },
   
   image1: {
-    width: 100,
+    width: 98,
     height: 22,
     borderRadius: 20,
     position: 'absolute',
-    top: 230,
+    top: 232,
     right: 255,
   },
   image2: {

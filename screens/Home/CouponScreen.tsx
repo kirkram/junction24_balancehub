@@ -3,6 +3,7 @@ import { useNavigation, useRoute, RouteProp } from '@react-navigation/native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import coupons from '../../companies_filler/Companies_Coupons.ts';
+import Colors from '../../constants/Colors.ts';
 
 type RouteParams = {
     couponId: string;
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
         marginBottom: 16,
     },
     activateButton: {
-        backgroundColor: '#007bff',
+        backgroundColor: Colors.ss.primary,
         paddingVertical: 12,
         paddingHorizontal: 32,
         borderRadius: 7,

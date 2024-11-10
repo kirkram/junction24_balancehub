@@ -5,6 +5,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import { LinearGradient } from 'expo-linear-gradient';
 import bookings from '../../../companies_filler/Company2_Booking.ts'
 import { SearchStackParamList } from '../../../@types/navigation.ts';
+import Colors from '../../../constants/Colors.ts';
 
 const BookingsList = () => {
   const navigation = useNavigation<NavigationProp<SearchStackParamList>>();
