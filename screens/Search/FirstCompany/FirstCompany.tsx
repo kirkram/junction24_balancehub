@@ -27,7 +27,7 @@ const Search = () => {
 
   return (
     <ScrollView style={styles.container}>
-      <HomeWelcome colorr="blue" />
+      <HomeWelcome colorr="darkcyan" />
       
       <View style={styles.likeDislikeContainer}>
       <TouchableOpacity style={styles.dislikeButton} onPress={() => handlePress('Like')}>
