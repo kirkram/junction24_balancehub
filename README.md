@@ -37,7 +37,3 @@ To run the project, follow these steps:
 
 ## Additional Information
 For more details, refer to the [official Expo documentation](https://docs.expo.dev/).
-
----
-
-Please review and let me know if there are any changes or additional sections you would like to include.
