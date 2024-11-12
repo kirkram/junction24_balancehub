@@ -1,5 +1,5 @@
 # Balance Hub
-
+![ScreenRecording_11-10-202403-24-16_1-ezgif com-optimize](https://github.com/user-attachments/assets/fefa2037-5d5a-4bb4-8136-867562718b5b)
 ## Introduction
 Balance Hub is a project primarily built using React Native and tested with Expo Go.
 
